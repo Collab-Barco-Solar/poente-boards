@@ -70,6 +70,8 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Hidden" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="Changes" color="12" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -8314,6 +8316,224 @@ Source: &lt;a href="https://www.molex.com/webdocs/datasheets/pdf/en-us/053259022
 </deviceset>
 </devicesets>
 </library>
+<library name="diy-modules">
+<description>&lt;b&gt;DIY Modules for Arduino, Raspberry Pi, CubieBoard etc.&lt;/b&gt;
+&lt;br&gt;&lt;br&gt;
+The library contains a list of symbols and footprints for popular, cheap and easy-to-use electronic modules.&lt;br&gt;
+The modules are intend to work with microprocessor-based platforms such as &lt;a href="http://arduino.cc"&gt;Arduino&lt;/a&gt;, &lt;a href="http://raspberrypi.org/"&gt;Raspberry Pi&lt;/a&gt;, &lt;a href="http://cubieboard.org/"&gt;CubieBoard&lt;/a&gt;, &lt;a href="http://beagleboard.org/"&gt;BeagleBone&lt;/a&gt; and many others. There are many manufacturers of the modules in the world. Almost all of them can be bought on &lt;a href="ebay.com"&gt;ebay.com&lt;/a&gt;.&lt;br&gt;
+&lt;br&gt;
+By using this library, you can design a PCB for devices created with usage of modules. Even if you do not need to create PCB design, you can also use the library to quickly document your work by drawing schematics of devices built by you.&lt;br&gt;
+&lt;br&gt;
+The latest version, examples, photos and much more can be found at: &lt;b&gt;&lt;a href="http://diymodules.org/eagle"&gt;diymodules.org/eagle&lt;/a&gt;&lt;/b&gt;&lt;br&gt;&lt;br&gt;
+Comments, suggestions and bug reports please send to: &lt;b&gt;&lt;a href="mailto:eagle@diymodules.org"&gt;eagle@diymodules.org&lt;/b&gt;&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+&lt;i&gt;Version: 1.8.0 (2017-Jul-02)&lt;/i&gt;&lt;br&gt;
+&lt;i&gt;Created by: Miroslaw Brudnowski&lt;/i&gt;&lt;br&gt;&lt;br&gt;
+&lt;i&gt;Released under the Creative Commons Attribution 4.0 International License: &lt;a href="http://creativecommons.org/licenses/by/4.0"&gt;http://creativecommons.org/licenses/by/4.0&lt;/a&gt;&lt;/i&gt;
+&lt;br&gt;&lt;br&gt;
+&lt;center&gt;
+&lt;a href="http://diymodules.org/eagle"&gt;&lt;img src="http://www.diymodules.org/img/diymodules-lbr-image.php?v=1.8.0" alt="DIYmodules.org"&gt;&lt;/a&gt;
+&lt;/center&gt;</description>
+<packages>
+<package name="DC-DC-STEP-DOWN-LM2596">
+<description>&lt;b&gt;DC/DC Step-Down Regulator&lt;/b&gt; based on &lt;b&gt;LM2596-ADJ&lt;/b&gt; chip</description>
+<wire x1="-21.59" y1="10.414" x2="21.59" y2="10.414" width="0.127" layer="21"/>
+<wire x1="21.59" y1="10.414" x2="21.59" y2="-10.414" width="0.127" layer="21"/>
+<wire x1="21.59" y1="-10.414" x2="-21.59" y2="-10.414" width="0.127" layer="21"/>
+<wire x1="-21.59" y1="-10.414" x2="-21.59" y2="10.414" width="0.127" layer="21"/>
+<pad name="IN+" x="-19.812" y="8.636" drill="1.5" diameter="2.5" shape="square"/>
+<pad name="IN-" x="-19.812" y="-8.636" drill="1.5" diameter="2.5" shape="square"/>
+<pad name="OUT-" x="19.812" y="-8.636" drill="1.5" diameter="2.5" shape="square"/>
+<pad name="OUT+" x="19.812" y="8.636" drill="1.5" diameter="2.5" shape="square"/>
+<hole x="-14.478" y="7.62" drill="3"/>
+<hole x="15.24" y="-7.62" drill="3"/>
+<text x="0" y="11.43" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-11.43" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="-19.685" y="0" size="1.778" layer="21" rot="R90" align="center">IN</text>
+<text x="19.685" y="0" size="1.778" layer="21" rot="R90" align="center">OUT</text>
+<wire x1="19.685" y1="6.985" x2="19.685" y2="5.715" width="0.254" layer="21"/>
+<wire x1="19.05" y1="6.35" x2="20.32" y2="6.35" width="0.254" layer="21"/>
+<wire x1="-19.685" y1="-6.985" x2="-19.685" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="19.685" y1="-6.985" x2="19.685" y2="-5.715" width="0.254" layer="21"/>
+<wire x1="-19.685" y1="6.985" x2="-19.685" y2="5.715" width="0.254" layer="21"/>
+<wire x1="-20.32" y1="6.35" x2="-19.05" y2="6.35" width="0.254" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="DC-DC-STEP-DOWN-LM2596">
+<description>&lt;b&gt;DC/DC Step-Down Regulator&lt;/b&gt; based on &lt;b&gt;LM2596-ADJ&lt;/b&gt; chip</description>
+<pin name="IN+" x="-17.78" y="5.08" visible="pin" length="middle"/>
+<pin name="IN-" x="-17.78" y="-5.08" visible="pin" length="middle"/>
+<pin name="OUT+" x="17.78" y="5.08" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT-" x="17.78" y="-5.08" visible="pin" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<text x="-12.7" y="15.24" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="12.7" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DC-DC-STEP-DOWN-LM2596">
+<description>&lt;b&gt;DC/DC Step-Down Regulator&lt;/b&gt; based on &lt;b&gt;LM2596-ADJ&lt;/b&gt; chip
+&lt;p&gt;&lt;b&gt;LM2596&lt;/b&gt; datasheet available here:&lt;br /&gt;&lt;a href="http://www.ti.com/lit/ds/symlink/lm2596.pdf"&gt;http://www.ti.com/lit/ds/symlink/lm2596.pdf&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;&lt;a href="http://www.ebay.com/sch/lm2596+power+regulator"&gt;Click here to find device on ebay.com&lt;/a&gt;&lt;/b&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="photo" src="http://www.diymodules.org/img/device-photo.php?name=DC-DC-STEP-DOWN-LM2596"&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="DC-DC-STEP-DOWN-LM2596" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DC-DC-STEP-DOWN-LM2596">
+<connects>
+<connect gate="G$1" pin="IN+" pad="IN+"/>
+<connect gate="G$1" pin="IN-" pad="IN-"/>
+<connect gate="G$1" pin="OUT+" pad="OUT+"/>
+<connect gate="G$1" pin="OUT-" pad="OUT-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="43650-0200">
+<description>&lt;Header 3.00mm, WTB single row, RA, 2w Molex MICRO-FIT 3.0 Series, Series Number 43650, 3mm Pitch 2 Way 1 Row Shrouded Right Angle PCB Header, Through Hole&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="43650-0200">
+<description>&lt;b&gt;43650-0200&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="0" y="0" drill="1.02" diameter="1.52"/>
+<pad name="2" x="-3" y="0" drill="1.02" diameter="1.52"/>
+<pad name="3" x="-1.5" y="-4.32" drill="3" diameter="3"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-6.325" y1="-8.92" x2="3.325" y2="-8.92" width="0.2" layer="51"/>
+<wire x1="3.325" y1="-8.92" x2="3.325" y2="0.98" width="0.2" layer="51"/>
+<wire x1="3.325" y1="0.98" x2="-6.325" y2="0.98" width="0.2" layer="51"/>
+<wire x1="-6.325" y1="0.98" x2="-6.325" y2="-8.92" width="0.2" layer="51"/>
+<wire x1="-6.325" y1="0.98" x2="3.325" y2="0.98" width="0.1" layer="21"/>
+<wire x1="3.325" y1="0.98" x2="3.325" y2="-8.92" width="0.1" layer="21"/>
+<wire x1="3.325" y1="-8.92" x2="-6.325" y2="-8.92" width="0.1" layer="21"/>
+<wire x1="-6.325" y1="-8.92" x2="-6.325" y2="0.98" width="0.1" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="43650-0200">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="-2.54" length="middle"/>
+<pin name="2" x="0" y="0" length="middle"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="43650-0200" prefix="J">
+<description>&lt;b&gt;Header 3.00mm, WTB single row, RA, 2w Molex MICRO-FIT 3.0 Series, Series Number 43650, 3mm Pitch 2 Way 1 Row Shrouded Right Angle PCB Header, Through Hole&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="http://www.molex.com/pdm_docs/sd/436500200_sd.pdf"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="43650-0200" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="43650-0200">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Header 3.00mm, WTB single row, RA, 2w Molex MICRO-FIT 3.0 Series, Series Number 43650, 3mm Pitch 2 Way 1 Row Shrouded Right Angle PCB Header, Through Hole" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Molex" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="43650-0200" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="538-43650-0200" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Molex/43650-0200?qs=HlEFOAM0q6XGaAJJj3Pssw%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="AZ1117IH-3.3TRG1">
+<description>&lt;LDO Voltage Regulators LDO BJT HiCurr 1.35A 10Hz to 10KHz&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<packages>
+<package name="SOT230P700X170-4N">
+<description>&lt;b&gt;SOT223/ H Package&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-3.1" y="2.3" dx="1.85" dy="0.9" layer="1"/>
+<smd name="2" x="-3.1" y="0" dx="1.85" dy="0.9" layer="1"/>
+<smd name="3" x="-3.1" y="-2.3" dx="1.85" dy="0.9" layer="1"/>
+<smd name="4" x="3.1" y="0" dx="3.2" dy="1.85" layer="1" rot="R90"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-4.275" y1="3.6" x2="4.275" y2="3.6" width="0.05" layer="51"/>
+<wire x1="4.275" y1="3.6" x2="4.275" y2="-3.6" width="0.05" layer="51"/>
+<wire x1="4.275" y1="-3.6" x2="-4.275" y2="-3.6" width="0.05" layer="51"/>
+<wire x1="-4.275" y1="-3.6" x2="-4.275" y2="3.6" width="0.05" layer="51"/>
+<wire x1="-1.75" y1="3.25" x2="1.75" y2="3.25" width="0.1" layer="51"/>
+<wire x1="1.75" y1="3.25" x2="1.75" y2="-3.25" width="0.1" layer="51"/>
+<wire x1="1.75" y1="-3.25" x2="-1.75" y2="-3.25" width="0.1" layer="51"/>
+<wire x1="-1.75" y1="-3.25" x2="-1.75" y2="3.25" width="0.1" layer="51"/>
+<wire x1="-1.75" y1="0.95" x2="0.55" y2="3.25" width="0.1" layer="51"/>
+<wire x1="-1.75" y1="3.25" x2="1.75" y2="3.25" width="0.2" layer="21"/>
+<wire x1="1.75" y1="3.25" x2="1.75" y2="-3.25" width="0.2" layer="21"/>
+<wire x1="1.75" y1="-3.25" x2="-1.75" y2="-3.25" width="0.2" layer="21"/>
+<wire x1="-1.75" y1="-3.25" x2="-1.75" y2="3.25" width="0.2" layer="21"/>
+<wire x1="-4.025" y1="3.1" x2="-2.175" y2="3.1" width="0.2" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="AZ1117IH-3.3TRG1">
+<wire x1="5.08" y1="2.54" x2="27.94" y2="2.54" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-7.62" x2="27.94" y2="2.54" width="0.254" layer="94"/>
+<wire x1="27.94" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="29.21" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="29.21" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="ADJ/GND" x="0" y="0" length="middle"/>
+<pin name="OUTPUT" x="0" y="-2.54" length="middle"/>
+<pin name="INPUT" x="0" y="-5.08" length="middle"/>
+<pin name="VOUT" x="33.02" y="0" length="middle" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="AZ1117IH-3.3TRG1" prefix="IC">
+<description>&lt;b&gt;LDO Voltage Regulators LDO BJT HiCurr 1.35A 10Hz to 10KHz&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="AZ1117IH-3.3TRG1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT230P700X170-4N">
+<connects>
+<connect gate="G$1" pin="ADJ/GND" pad="1"/>
+<connect gate="G$1" pin="INPUT" pad="3"/>
+<connect gate="G$1" pin="OUTPUT" pad="2"/>
+<connect gate="G$1" pin="VOUT" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="LDO Voltage Regulators LDO BJT HiCurr 1.35A 10Hz to 10KHz" constant="no"/>
+<attribute name="HEIGHT" value="1.7mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Diodes Inc." constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="AZ1117IH-3.3TRG1" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="621-AZ1117IH-3.3TRG1" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AZ1117IH-33TRG1?qs=cpo3%2FpBou2jnS4SxLgAVoA%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8341,6 +8561,12 @@ Source: &lt;a href="https://www.molex.com/webdocs/datasheets/pdf/en-us/053259022
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="680R"/>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
+<part name="U$2" library="diy-modules" deviceset="DC-DC-STEP-DOWN-LM2596" device=""/>
+<part name="12V_POWER" library="43650-0200" deviceset="43650-0200" device=""/>
+<part name="IC3" library="AZ1117IH-3.3TRG1" deviceset="AZ1117IH-3.3TRG1" device=""/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
+<part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8798,12 +9024,129 @@ Connector</text>
 <sheet>
 <description>Power</description>
 <plain>
+<wire x1="45.72" y1="231.14" x2="45.72" y2="187.96" width="0.3048" layer="94"/>
+<wire x1="45.72" y1="187.96" x2="137.16" y2="187.96" width="0.3048" layer="94"/>
+<wire x1="137.16" y1="187.96" x2="137.16" y2="231.14" width="0.3048" layer="94"/>
+<wire x1="137.16" y1="231.14" x2="45.72" y2="231.14" width="0.3048" layer="94"/>
+<text x="76.2" y="226.06" size="1.778" layer="94">DC/DC 12-05 V BUCK MODULE</text>
+<wire x1="12.7" y1="231.14" x2="12.7" y2="187.96" width="0.3048" layer="94"/>
+<wire x1="12.7" y1="187.96" x2="40.64" y2="187.96" width="0.3048" layer="94"/>
+<wire x1="40.64" y1="187.96" x2="40.64" y2="231.14" width="0.3048" layer="94"/>
+<wire x1="40.64" y1="231.14" x2="12.7" y2="231.14" width="0.3048" layer="94"/>
+<text x="20.32" y="223.52" size="1.778" layer="94">POWER 12V
+CONNECTOR</text>
+<wire x1="7.62" y1="248.92" x2="7.62" y2="182.88" width="0.3048" layer="94"/>
+<wire x1="7.62" y1="182.88" x2="142.24" y2="182.88" width="0.3048" layer="94"/>
+<wire x1="142.24" y1="182.88" x2="142.24" y2="248.92" width="0.3048" layer="94"/>
+<wire x1="142.24" y1="248.92" x2="7.62" y2="248.92" width="0.3048" layer="94"/>
+<text x="50.8" y="238.76" size="2.54" layer="94">12V INPUT AND CONVERSION</text>
+<wire x1="149.86" y1="248.92" x2="149.86" y2="182.88" width="0.3048" layer="94"/>
+<wire x1="149.86" y1="182.88" x2="276.86" y2="182.88" width="0.3048" layer="94"/>
+<wire x1="276.86" y1="182.88" x2="276.86" y2="248.92" width="0.3048" layer="94"/>
+<wire x1="276.86" y1="248.92" x2="149.86" y2="248.92" width="0.3048" layer="94"/>
+<wire x1="210.82" y1="228.6" x2="210.82" y2="185.42" width="0.3048" layer="94"/>
+<wire x1="210.82" y1="185.42" x2="274.32" y2="185.42" width="0.3048" layer="94"/>
+<wire x1="274.32" y1="185.42" x2="274.32" y2="228.6" width="0.3048" layer="94"/>
+<wire x1="274.32" y1="228.6" x2="210.82" y2="228.6" width="0.3048" layer="94"/>
+<text x="231.14" y="220.98" size="1.778" layer="94">3.3 V Regulator (LDO)</text>
 </plain>
 <instances>
+<instance part="FRAME3" gate="G$1" x="0" y="0" smashed="yes">
+<attribute name="DRAWING_NAME" x="344.17" y="15.24" size="2.54" layer="94"/>
+<attribute name="LAST_DATE_TIME" x="344.17" y="10.16" size="2.286" layer="94"/>
+<attribute name="SHEET" x="357.505" y="5.08" size="2.54" layer="94"/>
+</instance>
+<instance part="U$2" gate="G$1" x="91.44" y="203.2" smashed="yes">
+<attribute name="NAME" x="78.74" y="218.44" size="1.778" layer="95"/>
+<attribute name="VALUE" x="78.74" y="215.9" size="1.778" layer="96"/>
+</instance>
+<instance part="12V_POWER" gate="G$1" x="25.4" y="203.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="17.78" y="209.55" size="1.778" layer="95" rot="R90" align="center-left"/>
+<attribute name="VALUE" x="20.32" y="209.55" size="1.778" layer="96" rot="R90" align="center-left"/>
+</instance>
+<instance part="IC3" gate="G$1" x="228.6" y="208.28" smashed="yes">
+<attribute name="NAME" x="234.95" y="215.9" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="234.95" y="213.36" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="C6" gate="G$1" x="264.16" y="203.2" smashed="yes">
+<attribute name="NAME" x="265.176" y="203.835" size="1.778" layer="95"/>
+<attribute name="VALUE" x="265.176" y="199.009" size="1.778" layer="96"/>
+</instance>
+<instance part="GND4" gate="1" x="264.16" y="193.04" smashed="yes">
+<attribute name="VALUE" x="261.62" y="190.5" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="VCC_12V" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="IN+"/>
+<wire x1="73.66" y1="208.28" x2="68.58" y2="208.28" width="0.1524" layer="91"/>
+<label x="68.58" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="25.4" y1="203.2" x2="25.4" y2="200.66" width="0.1524" layer="91"/>
+<label x="25.4" y="200.66" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="12V_POWER" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="IN-"/>
+<wire x1="73.66" y1="198.12" x2="68.58" y2="198.12" width="0.1524" layer="91"/>
+<label x="68.58" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="OUT-"/>
+<wire x1="109.22" y1="198.12" x2="114.3" y2="198.12" width="0.1524" layer="91"/>
+<label x="114.3" y="198.12" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="27.94" y1="203.2" x2="27.94" y2="200.66" width="0.1524" layer="91"/>
+<label x="27.94" y="200.66" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="12V_POWER" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="ADJ/GND"/>
+<wire x1="228.6" y1="208.28" x2="226.06" y2="208.28" width="0.1524" layer="91"/>
+<label x="226.06" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="264.16" y1="195.58" x2="264.16" y2="198.12" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC_5V" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="OUT+"/>
+<wire x1="109.22" y1="208.28" x2="114.3" y2="208.28" width="0.1524" layer="91"/>
+<label x="114.3" y="208.28" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="INPUT"/>
+<wire x1="228.6" y1="203.2" x2="226.06" y2="203.2" width="0.1524" layer="91"/>
+<label x="226.06" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="VCC_3V3" class="0">
+<segment>
+<pinref part="IC3" gate="G$1" pin="VOUT"/>
+<wire x1="261.62" y1="208.28" x2="264.16" y2="208.28" width="0.1524" layer="91"/>
+<label x="266.7" y="210.82" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="264.16" y1="205.74" x2="264.16" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="208.28" x2="266.7" y2="208.28" width="0.1524" layer="91"/>
+<junction x="264.16" y="208.28"/>
+<wire x1="266.7" y1="208.28" x2="266.7" y2="210.82" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC3" gate="G$1" pin="OUTPUT"/>
+<wire x1="228.6" y1="205.74" x2="226.06" y2="205.74" width="0.1524" layer="91"/>
+<label x="226.06" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
