@@ -8565,7 +8565,7 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <part name="U$2" library="diy-modules" deviceset="DC-DC-STEP-DOWN-LM2596" device=""/>
 <part name="12V_POWER" library="43650-0200" deviceset="43650-0200" device=""/>
 <part name="IC3" library="AZ1117IH-3.3TRG1" deviceset="AZ1117IH-3.3TRG1" device=""/>
-<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
+<part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
