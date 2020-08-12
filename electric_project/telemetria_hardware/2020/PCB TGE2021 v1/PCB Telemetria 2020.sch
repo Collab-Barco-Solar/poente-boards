@@ -8567,6 +8567,8 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <part name="IC3" library="AZ1117IH-3.3TRG1" deviceset="AZ1117IH-3.3TRG1" device=""/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF"/>
+<part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8771,7 +8773,7 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <wire x1="12.7" y1="154.94" x2="154.94" y2="154.94" width="0.1524" layer="94"/>
 <wire x1="154.94" y1="154.94" x2="154.94" y2="246.38" width="0.1524" layer="94"/>
 <wire x1="154.94" y1="246.38" x2="12.7" y2="246.38" width="0.1524" layer="94"/>
-<text x="48.26" y="241.3" size="2.54" layer="94">MOTOR SHUNT CURRENT SENSE</text>
+<text x="58.42" y="241.3" size="2.54" layer="94">MOTOR SHUNT CURRENT SENSE</text>
 <wire x1="15.24" y1="233.68" x2="15.24" y2="198.12" width="0.1524" layer="94"/>
 <wire x1="15.24" y1="198.12" x2="106.68" y2="198.12" width="0.1524" layer="94"/>
 <wire x1="106.68" y1="198.12" x2="106.68" y2="233.68" width="0.1524" layer="94"/>
@@ -9075,6 +9077,13 @@ CONNECTOR</text>
 <instance part="GND4" gate="1" x="264.16" y="193.04" smashed="yes">
 <attribute name="VALUE" x="261.62" y="190.5" size="1.778" layer="96"/>
 </instance>
+<instance part="C7" gate="G$1" x="223.52" y="198.12" smashed="yes">
+<attribute name="NAME" x="224.536" y="198.755" size="1.778" layer="95"/>
+<attribute name="VALUE" x="224.536" y="193.929" size="1.778" layer="96"/>
+</instance>
+<instance part="GND5" gate="1" x="223.52" y="187.96" smashed="yes">
+<attribute name="VALUE" x="220.98" y="185.42" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9117,6 +9126,11 @@ CONNECTOR</text>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="264.16" y1="195.58" x2="264.16" y2="198.12" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND5" gate="1" pin="GND"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="223.52" y1="190.5" x2="223.52" y2="193.04" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="VCC_5V" class="0">
 <segment>
@@ -9126,8 +9140,12 @@ CONNECTOR</text>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="INPUT"/>
-<wire x1="228.6" y1="203.2" x2="226.06" y2="203.2" width="0.1524" layer="91"/>
-<label x="226.06" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="228.6" y1="203.2" x2="223.52" y2="203.2" width="0.1524" layer="91"/>
+<label x="220.98" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="223.52" y1="203.2" x2="220.98" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="200.66" x2="223.52" y2="203.2" width="0.1524" layer="91"/>
+<junction x="223.52" y="203.2"/>
 </segment>
 </net>
 <net name="VCC_3V3" class="0">
