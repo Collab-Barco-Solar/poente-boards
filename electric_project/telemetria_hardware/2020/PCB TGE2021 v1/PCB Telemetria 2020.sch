@@ -8862,18 +8862,6 @@ Connector</text>
 <busses>
 </busses>
 <nets>
-<net name="MSHUNT_N" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="IN-"/>
-<wire x1="50.8" y1="213.36" x2="48.26" y2="213.36" width="0.1524" layer="91"/>
-<label x="48.26" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="MSHUNT" gate="G$1" pin="2"/>
-<wire x1="134.62" y1="175.26" x2="137.16" y2="175.26" width="0.1524" layer="91"/>
-<label x="137.16" y="175.26" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="IC1" gate="G$1" pin="GND"/>
@@ -8912,18 +8900,6 @@ Connector</text>
 <pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="208.28" x2="132.08" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-</net>
-<net name="MSHUNT_P" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="IN+"/>
-<wire x1="78.74" y1="213.36" x2="81.28" y2="213.36" width="0.1524" layer="91"/>
-<label x="81.28" y="213.36" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="MSHUNT" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="172.72" x2="137.16" y2="172.72" width="0.1524" layer="91"/>
-<label x="137.16" y="172.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VCC_3V3" class="0">
@@ -9019,6 +8995,30 @@ Connector</text>
 <pinref part="IC2" gate="G$1" pin="AIN"/>
 <wire x1="55.88" y1="167.64" x2="53.34" y2="167.64" width="0.1524" layer="91"/>
 <label x="53.34" y="167.64" size="1.016" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="MSHUNT_M" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="IN-"/>
+<wire x1="50.8" y1="213.36" x2="48.26" y2="213.36" width="0.1524" layer="91"/>
+<label x="48.26" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<wire x1="134.62" y1="175.26" x2="137.16" y2="175.26" width="0.1524" layer="91"/>
+<label x="137.16" y="175.26" size="1.27" layer="95" xref="yes"/>
+<pinref part="MSHUNT" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="MSHUNT_B" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="IN+"/>
+<wire x1="78.74" y1="213.36" x2="81.28" y2="213.36" width="0.1524" layer="91"/>
+<label x="81.28" y="213.36" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<wire x1="134.62" y1="172.72" x2="137.16" y2="172.72" width="0.1524" layer="91"/>
+<label x="137.16" y="172.72" size="1.27" layer="95" xref="yes"/>
+<pinref part="MSHUNT" gate="G$1" pin="1"/>
 </segment>
 </net>
 </nets>
