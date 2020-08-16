@@ -8534,6 +8534,252 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="allegro" urn="urn:adsk.eagle:library:93">
+<description>&lt;b&gt;Allegro MicroSystems, Inc&lt;/b&gt;&lt;p&gt;
+www.allegromicro.com&lt;br&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="CB-PFF" urn="urn:adsk.eagle:footprint:3433/1" library_version="3">
+<description>&lt;b&gt;5-pin module, leadform PFF&lt;/b&gt;&lt;p&gt;
+Source: http://www.allegromicro.com/en/Products/Part_Numbers/0758/0758.pdf</description>
+<wire x1="-7" y1="1" x2="-3" y2="1" width="0" layer="46"/>
+<wire x1="-3" y1="1" x2="-3" y2="-1" width="0" layer="46" curve="-180"/>
+<wire x1="-3" y1="-1" x2="-7" y2="-1" width="0" layer="46"/>
+<wire x1="-7" y1="-1" x2="-7" y2="1" width="0" layer="46" curve="-180"/>
+<wire x1="3" y1="1" x2="7" y2="1" width="0" layer="46"/>
+<wire x1="7" y1="1" x2="7" y2="-1" width="0" layer="46" curve="-180"/>
+<wire x1="7" y1="-1" x2="3" y2="-1" width="0" layer="46"/>
+<wire x1="3" y1="-1" x2="3" y2="1" width="0" layer="46" curve="-180"/>
+<wire x1="-7" y1="3" x2="-7" y2="-3" width="0.001" layer="49" curve="180"/>
+<wire x1="-7" y1="-3" x2="-3" y2="-3" width="0.001" layer="49"/>
+<wire x1="-3" y1="-3" x2="-0.5" y2="-1.65" width="0.001" layer="49" curve="56.738399"/>
+<wire x1="-7" y1="3" x2="-3" y2="3" width="0.001" layer="49"/>
+<wire x1="-3" y1="3" x2="-0.5" y2="1.65" width="0.001" layer="49" curve="-56.738399"/>
+<wire x1="-0.5" y1="1.65" x2="-0.5" y2="-1.65" width="0.001" layer="49"/>
+<wire x1="7" y1="-3" x2="7" y2="3" width="0.001" layer="49" curve="180"/>
+<wire x1="7" y1="3" x2="3" y2="3" width="0.001" layer="49"/>
+<wire x1="3" y1="3" x2="0.5" y2="1.65" width="0.001" layer="49" curve="56.738399"/>
+<wire x1="7" y1="-3" x2="3" y2="-3" width="0.001" layer="49"/>
+<wire x1="3" y1="-3" x2="0.5" y2="-1.65" width="0.001" layer="49" curve="-56.738399"/>
+<wire x1="0.5" y1="1.65" x2="0.5" y2="-1.65" width="0.001" layer="49"/>
+<wire x1="-7" y1="0.7" x2="-3" y2="0.7" width="0.2032" layer="51"/>
+<wire x1="-3" y1="0.7" x2="-3" y2="-4.9" width="0.2032" layer="51"/>
+<wire x1="-7" y1="0.7" x2="-7" y2="-4.9" width="0.2032" layer="51"/>
+<wire x1="-4.95" y1="-4.9" x2="4.95" y2="-4.9" width="0.2032" layer="21"/>
+<wire x1="7" y1="-4.9" x2="7" y2="0.7" width="0.2032" layer="51"/>
+<wire x1="7" y1="0.7" x2="3" y2="0.7" width="0.2032" layer="51"/>
+<wire x1="3" y1="0.7" x2="3" y2="-4.9" width="0.2032" layer="51"/>
+<wire x1="-7" y1="-4.9" x2="-7" y2="-12.65" width="0.2032" layer="21"/>
+<wire x1="-6.525" y1="-13.775" x2="-5.025" y2="-13.775" width="0.2032" layer="21"/>
+<wire x1="7" y1="-4.9" x2="7" y2="-12.65" width="0.2032" layer="21"/>
+<wire x1="6.525" y1="-13.775" x2="5" y2="-13.775" width="0.2032" layer="21"/>
+<wire x1="-4.95" y1="-4.9" x2="-4.95" y2="-17.6" width="0.2032" layer="21"/>
+<wire x1="-4.95" y1="-17.6" x2="4.95" y2="-17.6" width="0.2032" layer="21"/>
+<wire x1="4.95" y1="-17.6" x2="4.95" y2="-4.9" width="0.2032" layer="21"/>
+<wire x1="-6.525" y1="-13.775" x2="-7" y2="-12.65" width="0.2032" layer="21"/>
+<wire x1="6.525" y1="-13.775" x2="7" y2="-12.65" width="0.2032" layer="21"/>
+<wire x1="0" y1="-21.4" x2="0" y2="-20.2" width="0.6" layer="51"/>
+<wire x1="0" y1="-20.2" x2="0" y2="-17.825" width="0.6" layer="21"/>
+<wire x1="-1.91" y1="-21.4" x2="-1.91" y2="-20.2" width="0.6" layer="51"/>
+<wire x1="-1.91" y1="-20.2" x2="-1.91" y2="-17.825" width="0.6" layer="21"/>
+<wire x1="1.91" y1="-21.4" x2="1.91" y2="-20.2" width="0.6" layer="51"/>
+<wire x1="1.91" y1="-20.2" x2="1.91" y2="-17.825" width="0.6" layer="21"/>
+<circle x="-1.8243" y="1.6181" radius="0.25" width="0.001" layer="49"/>
+<circle x="-1.0978" y="0.6181" radius="0.25" width="0.001" layer="49"/>
+<circle x="-1.0978" y="-0.6179" radius="0.25" width="0.001" layer="49"/>
+<circle x="-1.8244" y="-1.618" radius="0.25" width="0.001" layer="49"/>
+<circle x="-3" y="-2" radius="0.25" width="0.001" layer="49"/>
+<circle x="-3" y="2" radius="0.25" width="0.001" layer="49"/>
+<circle x="-4.3333" y="2" radius="0.25" width="0.001" layer="49"/>
+<circle x="-5.6666" y="2" radius="0.25" width="0.001" layer="49"/>
+<circle x="-8.1757" y="-1.6181" radius="0.25" width="0.001" layer="49"/>
+<circle x="-8.9022" y="-0.6181" radius="0.25" width="0.001" layer="49"/>
+<circle x="-8.9022" y="0.6179" radius="0.25" width="0.001" layer="49"/>
+<circle x="-8.1756" y="1.618" radius="0.25" width="0.001" layer="49"/>
+<circle x="-7" y="2" radius="0.25" width="0.001" layer="49"/>
+<circle x="-7" y="-2" radius="0.25" width="0.001" layer="49"/>
+<circle x="-5.6667" y="-2" radius="0.25" width="0.001" layer="49"/>
+<circle x="-4.3334" y="-2" radius="0.25" width="0.001" layer="49"/>
+<circle x="8.1757" y="1.6181" radius="0.25" width="0.001" layer="49"/>
+<circle x="8.9022" y="0.6181" radius="0.25" width="0.001" layer="49"/>
+<circle x="8.9022" y="-0.6179" radius="0.25" width="0.001" layer="49"/>
+<circle x="8.1756" y="-1.618" radius="0.25" width="0.001" layer="49"/>
+<circle x="7" y="-2" radius="0.25" width="0.001" layer="49"/>
+<circle x="7" y="2" radius="0.25" width="0.001" layer="49"/>
+<circle x="5.6667" y="2" radius="0.25" width="0.001" layer="49"/>
+<circle x="4.3334" y="2" radius="0.25" width="0.001" layer="49"/>
+<circle x="1.8243" y="-1.6181" radius="0.25" width="0.001" layer="49"/>
+<circle x="1.0978" y="-0.6181" radius="0.25" width="0.001" layer="49"/>
+<circle x="1.0978" y="0.6179" radius="0.25" width="0.001" layer="49"/>
+<circle x="1.8244" y="1.618" radius="0.25" width="0.001" layer="49"/>
+<circle x="3" y="2" radius="0.25" width="0.001" layer="49"/>
+<circle x="3" y="-2" radius="0.25" width="0.001" layer="49"/>
+<circle x="4.3333" y="-2" radius="0.25" width="0.001" layer="49"/>
+<circle x="5.6666" y="-2" radius="0.25" width="0.001" layer="49"/>
+<circle x="-3.175" y="-16.225" radius="0.4776" width="0.2032" layer="21"/>
+<pad name="IP-@2" x="-8.89" y="0.635" drill="0.5" diameter="0.9" rot="R180"/>
+<pad name="IP+@2" x="8.89" y="0.635" drill="0.5" diameter="0.9"/>
+<pad name="IP+" x="7" y="0" drill="2" diameter="4" shape="offset" rot="R180"/>
+<pad name="IP-" x="-7" y="0" drill="2" diameter="4" shape="offset"/>
+<pad name="1" x="-1.91" y="-21.4" drill="0.8" diameter="1.5"/>
+<pad name="2" x="0" y="-21.4" drill="0.8" diameter="1.5"/>
+<pad name="3" x="1.91" y="-21.4" drill="0.8" diameter="1.5"/>
+<pad name="IP+@3" x="8.89" y="-0.635" drill="0.5" diameter="0.9"/>
+<pad name="IP-@3" x="-8.89" y="-0.635" drill="0.5" diameter="0.9" rot="R180"/>
+<pad name="IP+@4" x="8.175" y="-1.625" drill="0.5" diameter="0.9"/>
+<pad name="IP+@5" x="7" y="-2" drill="0.5" diameter="0.9"/>
+<pad name="IP+@6" x="5.675" y="-2" drill="0.5" diameter="0.9"/>
+<pad name="IP+@7" x="4.35" y="-2" drill="0.5" diameter="0.9"/>
+<pad name="IP+@8" x="3" y="-2" drill="0.5" diameter="0.9"/>
+<pad name="IP+@9" x="1.825" y="-1.625" drill="0.5" diameter="0.9"/>
+<pad name="IP+@10" x="1.1" y="-0.625" drill="0.5" diameter="0.9"/>
+<pad name="IP+@11" x="1.1" y="0.625" drill="0.5" diameter="0.9"/>
+<pad name="IP+@12" x="1.825" y="1.625" drill="0.5" diameter="0.9"/>
+<pad name="IP+@13" x="3" y="2" drill="0.5" diameter="0.9"/>
+<pad name="IP+@14" x="4.35" y="2" drill="0.5" diameter="0.9"/>
+<pad name="IP+@15" x="5.675" y="2" drill="0.5" diameter="0.9"/>
+<pad name="IP+@16" x="7" y="2" drill="0.5" diameter="0.9"/>
+<pad name="IP+@17" x="8.175" y="1.625" drill="0.5" diameter="0.9"/>
+<pad name="IP-@4" x="-8.175" y="-1.625" drill="0.5" diameter="0.9" rot="R180"/>
+<pad name="IP-@5" x="-7" y="-2" drill="0.5" diameter="0.9" rot="R180"/>
+<pad name="IP-@6" x="-5.675" y="-2" drill="0.5" diameter="0.9" rot="R180"/>
+<pad name="IP-@7" x="-4.325" y="-2" drill="0.5" diameter="0.9" rot="R180"/>
+<pad name="IP-@8" x="-3" y="-2" drill="0.5" diameter="0.9" rot="R180"/>
+<pad name="IP-@9" x="-1.825" y="-1.625" drill="0.5" diameter="0.9" rot="R180"/>
+<pad name="IP-@10" x="-1.1" y="-0.625" drill="0.5" diameter="0.9" rot="R180"/>
+<pad name="IP-@11" x="-1.1" y="0.625" drill="0.5" diameter="0.9" rot="R180"/>
+<pad name="IP-@12" x="-1.825" y="1.625" drill="0.5" diameter="0.9" rot="R180"/>
+<pad name="IP-@13" x="-3" y="2" drill="0.5" diameter="0.9" rot="R180"/>
+<pad name="IP-@14" x="-4.325" y="2" drill="0.5" diameter="0.9" rot="R180"/>
+<pad name="IP-@15" x="-5.675" y="2" drill="0.5" diameter="0.9" rot="R180"/>
+<pad name="IP-@16" x="-7" y="2" drill="0.5" diameter="0.9" rot="R180"/>
+<pad name="IP-@17" x="-8.175" y="1.625" drill="0.5" diameter="0.9" rot="R180"/>
+<text x="-3.81" y="-8.255" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.81" y="-13.335" size="1.27" layer="27">&gt;VALUE</text>
+<polygon width="0.3" layer="1">
+<vertex x="-0.635" y="1.5875"/>
+<vertex x="-0.635" y="-1.5875" curve="-52.588927"/>
+<vertex x="-2.8575" y="-2.8575"/>
+<vertex x="-6.985" y="-2.8575" curve="-180"/>
+<vertex x="-6.985" y="2.8575"/>
+<vertex x="-2.8575" y="2.8575" curve="-50.290534"/>
+</polygon>
+<polygon width="0.3" layer="1">
+<vertex x="0.635" y="-1.5875"/>
+<vertex x="0.635" y="1.5875" curve="-52.588927"/>
+<vertex x="2.8575" y="2.8575"/>
+<vertex x="6.985" y="2.8575" curve="-180"/>
+<vertex x="6.985" y="-2.8575"/>
+<vertex x="2.8575" y="-2.8575" curve="-50.290534"/>
+</polygon>
+<polygon width="0.3" layer="16">
+<vertex x="-0.635" y="1.5875"/>
+<vertex x="-0.635" y="-1.5875" curve="-52.588927"/>
+<vertex x="-2.8575" y="-2.8575"/>
+<vertex x="-6.985" y="-2.8575" curve="-180"/>
+<vertex x="-6.985" y="2.8575"/>
+<vertex x="-2.8575" y="2.8575" curve="-50.290534"/>
+</polygon>
+<polygon width="0.3" layer="16">
+<vertex x="0.635" y="-1.5875"/>
+<vertex x="0.635" y="1.5875" curve="-52.588927"/>
+<vertex x="2.8575" y="2.8575"/>
+<vertex x="6.985" y="2.8575" curve="-180"/>
+<vertex x="6.985" y="-2.8575"/>
+<vertex x="2.8575" y="-2.8575" curve="-50.290534"/>
+</polygon>
+<rectangle x1="-0.3175" y1="-2.2225" x2="0.3175" y2="2.2225" layer="41"/>
+<rectangle x1="-0.3175" y1="-2.2225" x2="0.3175" y2="2.2225" layer="42"/>
+<rectangle x1="-0.3175" y1="-2.2225" x2="0.3175" y2="2.2225" layer="43"/>
+</package>
+</packages>
+<packages3d>
+<package3d name="CB-PFF" urn="urn:adsk.eagle:package:3449/1" type="box" library_version="3">
+<description>5-pin module, leadform PFF
+Source: http://www.allegromicro.com/en/Products/Part_Numbers/0758/0758.pdf</description>
+<packageinstances>
+<packageinstance name="CB-PFF"/>
+</packageinstances>
+</package3d>
+</packages3d>
+<symbols>
+<symbol name="ACS750XCA-050" urn="urn:adsk.eagle:symbol:3431/1" library_version="3">
+<wire x1="7.62" y1="7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="4.445" x2="-5.08" y2="1.016" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0.3048" x2="-5.08" y2="-4.445" width="0.254" layer="94"/>
+<wire x1="-4.572" y1="0" x2="-4.572" y2="-0.254" width="0.0508" layer="94" curve="331.927513" cap="flat"/>
+<wire x1="-4.064" y1="0" x2="-4.064" y2="-0.254" width="0.0508" layer="94" curve="345.694225" cap="flat"/>
+<wire x1="-4.572" y1="0" x2="-4.064" y2="0" width="0.0508" layer="94"/>
+<wire x1="-4.572" y1="-0.254" x2="-4.064" y2="-0.254" width="0.0508" layer="94"/>
+<text x="-2.54" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-6.35" y="-6.604" size="1.524" layer="95">IP-</text>
+<text x="-6.35" y="5.08" size="1.524" layer="95">IP+</text>
+<pin name="IP-" x="-5.08" y="-12.7" visible="pad" length="middle" direction="pas" rot="R90"/>
+<pin name="IP+" x="-5.08" y="12.7" visible="pad" length="middle" direction="pas" rot="R270"/>
+<pin name="GND" x="10.16" y="-5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="VCC" x="10.16" y="5.08" length="short" direction="pwr" rot="R180"/>
+<pin name="VOUT" x="10.16" y="0" length="short" direction="out" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ACS758*" urn="urn:adsk.eagle:component:3465/2" prefix="IC" library_version="3">
+<description>&lt;b&gt;Thermally Enhanced, Fully Integrated, Hall Effect-Based Linear Current Sensor&lt;/b&gt; with 100 micro Ohm Current Conductor&lt;p&gt;
+display layer 49 Reference in BRD and place VIAs on circles&lt;br&gt;
+Source: http://www.allegromicro.com/en/Products/Part_Numbers/0758/0758.pdf</description>
+<gates>
+<gate name="G$1" symbol="ACS750XCA-050" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CB-PFF">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IP+" pad="IP+ IP+@2 IP+@3 IP+@4 IP+@5 IP+@6 IP+@7 IP+@8 IP+@9 IP+@10 IP+@11 IP+@12 IP+@13 IP+@14 IP+@15 IP+@16 IP+@17" route="any"/>
+<connect gate="G$1" pin="IP-" pad="IP- IP-@2 IP-@3 IP-@4 IP-@5 IP-@6 IP-@7 IP-@8 IP-@9 IP-@10 IP-@11 IP-@12 IP-@13 IP-@14 IP-@15 IP-@16 IP-@17" route="any"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:3449/1"/>
+</package3dinstances>
+<technologies>
+<technology name="ECB-200B-PFF-T">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="ACS758ECB-200B-PFF-T" constant="no"/>
+<attribute name="OC_FARNELL" value="1718993" constant="no"/>
+<attribute name="OC_NEWARK" value="04R7127" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="KCB-150B-PFF-T">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="ACS758KCB-150B-PFF-T" constant="no"/>
+<attribute name="OC_FARNELL" value="1718995" constant="no"/>
+<attribute name="OC_NEWARK" value="04R7129" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="LCB-050B-PFF-T">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="ACS758LCB-050B-PFF-T" constant="no"/>
+<attribute name="OC_FARNELL" value="1718997" constant="no"/>
+<attribute name="OC_NEWARK" value="04R7131" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+<technology name="LCB-100B-PFF-T">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="ACS758LCB-100B-PFF-T" constant="no"/>
+<attribute name="OC_FARNELL" value="1718998" constant="no"/>
+<attribute name="OC_NEWARK" value="04R7132" constant="no"/>
+<attribute name="POPULARITY" value="0" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -8562,13 +8808,17 @@ Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
 <part name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
-<part name="U$2" library="diy-modules" deviceset="DC-DC-STEP-DOWN-LM2596" device=""/>
+<part name="U$2" library="diy-modules" deviceset="DC-DC-STEP-DOWN-LM2596" device="" override_package3d_urn="urn:adsk.eagle:package:22688648/2" override_package_urn="urn:adsk.eagle:footprint:22688649/1"/>
 <part name="12V_POWER" library="43650-0200" deviceset="43650-0200" device=""/>
 <part name="IC3" library="AZ1117IH-3.3TRG1" deviceset="AZ1117IH-3.3TRG1" device=""/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF"/>
 <part name="GND4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="IC4" library="allegro" library_urn="urn:adsk.eagle:library:93" deviceset="ACS758*" device="" package3d_urn="urn:adsk.eagle:package:3449/1" technology="LCB-050B-PFF-T"/>
+<part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8858,6 +9108,20 @@ Connector</text>
 <instance part="GND3" gate="1" x="132.08" y="203.2" smashed="yes">
 <attribute name="VALUE" x="129.54" y="200.66" size="1.778" layer="96"/>
 </instance>
+<instance part="IC4" gate="G$1" x="198.12" y="215.9" smashed="yes" rot="R270">
+<attribute name="NAME" x="207.01" y="218.44" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="187.96" y="218.44" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND6" gate="1" x="193.04" y="198.12" smashed="yes">
+<attribute name="VALUE" x="190.5" y="195.58" size="1.778" layer="96"/>
+</instance>
+<instance part="C8" gate="G$1" x="172.72" y="210.82" smashed="yes">
+<attribute name="NAME" x="173.736" y="211.455" size="1.778" layer="95"/>
+<attribute name="VALUE" x="173.736" y="206.629" size="1.778" layer="96"/>
+</instance>
+<instance part="GND7" gate="1" x="172.72" y="200.66" smashed="yes">
+<attribute name="VALUE" x="170.18" y="198.12" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8900,6 +9164,16 @@ Connector</text>
 <pinref part="C5" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="208.28" x2="132.08" y2="205.74" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="GND"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+<wire x1="193.04" y1="205.74" x2="193.04" y2="200.66" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="172.72" y1="205.74" x2="172.72" y2="203.2" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VCC_3V3" class="0">
@@ -8947,6 +9221,17 @@ Connector</text>
 <wire x1="83.82" y1="185.42" x2="81.28" y2="185.42" width="0.1524" layer="91"/>
 <junction x="83.82" y="185.42"/>
 <label x="81.28" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="IC4" gate="G$1" pin="VCC"/>
+<label x="203.2" y="198.12" size="1.27" layer="95" xref="yes"/>
+<wire x1="203.2" y1="198.12" x2="203.2" y2="205.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="172.72" y1="213.36" x2="172.72" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="215.9" x2="170.18" y2="215.9" width="0.1524" layer="91"/>
+<label x="170.18" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="MSHUNT_AMP" class="0">
@@ -9019,6 +9304,13 @@ Connector</text>
 <wire x1="134.62" y1="172.72" x2="137.16" y2="172.72" width="0.1524" layer="91"/>
 <label x="137.16" y="172.72" size="1.27" layer="95" xref="yes"/>
 <pinref part="MSHUNT" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="MPPT_COUT" class="0">
+<segment>
+<pinref part="IC4" gate="G$1" pin="VOUT"/>
+<wire x1="198.12" y1="205.74" x2="198.12" y2="200.66" width="0.1524" layer="91"/>
+<label x="198.12" y="200.66" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 </nets>
@@ -9189,6 +9481,11 @@ will not be understood (or retained) with this version.
 Since Version 8.3, EAGLE supports the association of 3D packages
 with devices in libraries, schematics, and board files. Those 3D
 packages will not be understood (or retained) with this version.
+</note>
+<note version="9.4" severity="warning">
+Since Version 9.4, EAGLE supports the overriding of 3D packages
+in schematics and board files. Those overridden 3d packages
+will not be understood (or retained) with this version.
 </note>
 <note version="8.4" severity="warning">
 Since Version 8.4, EAGLE supports properties for SPICE simulation. 
