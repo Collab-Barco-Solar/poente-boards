@@ -1,2 +1,3 @@
-**Circuit Project Notes**
+# Circuit Project Notes
+
 *Author: João Agricio Lopes Barbosa*
