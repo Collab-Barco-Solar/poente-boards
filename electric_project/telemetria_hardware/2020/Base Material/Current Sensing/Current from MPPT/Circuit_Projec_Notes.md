@@ -46,4 +46,4 @@ In the [ACS758 datasheet](https://github.com/Collab-Barco-Solar/poente-boards/bl
 
 #### Filter Design Definition
 
-Thus, based on the ACS758 impedance boundaries the filter must have a resistance equal or greater than 4.7 k<span>&#8486;</span> which implies in a limitation in the rate of readings from the ADC (SAR's ADC's). To mantaing this limitation as low as possible, the value of the resistor will be 4.7 k<span>&#8486;</span> and the filter will cut of frequency of 338.63 Hz, achieved using a 100 nF capacitor.
+Thus, based on the ACS758 impedance boundaries the filter must have a resistance equal or greater than 4.7 k<span>&#8486;</span> which implies in a limitation in the rate of readings from the ADC (SAR's ADC's). To mantaing this limitation as low as possible, the value of the resistor will be 4.7 k<span>&#8486;</span>. Based on the transient caracteristic of the load and for convenience (capacitor values alredy on the project) the filter cut-off frequency will be 338.63 Hz, achieved using a 100 nF capacitor.
