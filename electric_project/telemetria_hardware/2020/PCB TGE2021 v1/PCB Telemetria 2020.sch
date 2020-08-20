@@ -8817,8 +8817,11 @@ Source: http://www.allegromicro.com/en/Products/Part_Numbers/0758/0758.pdf</desc
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="IC4" library="allegro" library_urn="urn:adsk.eagle:library:93" deviceset="ACS758*" device="" package3d_urn="urn:adsk.eagle:package:3449/1" technology="LCB-050B-PFF-T"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2"/>
+<part name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
 <part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="4.7k"/>
+<part name="GND8" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9048,6 +9051,12 @@ Connector</text>
 <wire x1="152.4" y1="198.12" x2="152.4" y2="233.68" width="0.1524" layer="94"/>
 <wire x1="152.4" y1="233.68" x2="109.22" y2="233.68" width="0.1524" layer="94"/>
 <text x="116.84" y="228.6" size="1.778" layer="94">INA240 OUTPUT FILTER</text>
+<wire x1="157.48" y1="246.38" x2="157.48" y2="154.94" width="0.1524" layer="94"/>
+<wire x1="157.48" y1="154.94" x2="246.38" y2="154.94" width="0.1524" layer="94"/>
+<wire x1="246.38" y1="154.94" x2="246.38" y2="246.38" width="0.1524" layer="94"/>
+<wire x1="246.38" y1="246.38" x2="157.48" y2="246.38" width="0.1524" layer="94"/>
+<text x="161.036" y="170.18" size="1.778" layer="97" rot="R90" align="center">Decoupling 
+Capacitor</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0" smashed="yes">
@@ -9108,19 +9117,30 @@ Connector</text>
 <instance part="GND3" gate="1" x="132.08" y="203.2" smashed="yes">
 <attribute name="VALUE" x="129.54" y="200.66" size="1.778" layer="96"/>
 </instance>
-<instance part="IC4" gate="G$1" x="198.12" y="215.9" smashed="yes" rot="R270">
-<attribute name="NAME" x="207.01" y="218.44" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="187.96" y="218.44" size="1.778" layer="96" rot="R270"/>
+<instance part="IC4" gate="G$1" x="195.58" y="177.8" smashed="yes" rot="R270">
+<attribute name="NAME" x="204.47" y="180.34" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="185.42" y="180.34" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND6" gate="1" x="193.04" y="198.12" smashed="yes">
-<attribute name="VALUE" x="190.5" y="195.58" size="1.778" layer="96"/>
+<instance part="GND6" gate="1" x="190.5" y="160.02" smashed="yes">
+<attribute name="VALUE" x="187.96" y="157.48" size="1.778" layer="96"/>
 </instance>
-<instance part="C8" gate="G$1" x="172.72" y="210.82" smashed="yes">
-<attribute name="NAME" x="173.736" y="211.455" size="1.778" layer="95"/>
-<attribute name="VALUE" x="173.736" y="206.629" size="1.778" layer="96"/>
+<instance part="C8" gate="G$1" x="167.64" y="170.18" smashed="yes">
+<attribute name="NAME" x="168.656" y="170.815" size="1.778" layer="95"/>
+<attribute name="VALUE" x="168.656" y="165.989" size="1.778" layer="96"/>
 </instance>
-<instance part="GND7" gate="1" x="172.72" y="200.66" smashed="yes">
-<attribute name="VALUE" x="170.18" y="198.12" size="1.778" layer="96"/>
+<instance part="GND7" gate="1" x="167.64" y="160.02" smashed="yes">
+<attribute name="VALUE" x="165.1" y="157.48" size="1.778" layer="96"/>
+</instance>
+<instance part="C9" gate="G$1" x="228.6" y="170.18" smashed="yes">
+<attribute name="NAME" x="229.616" y="170.815" size="1.778" layer="95"/>
+<attribute name="VALUE" x="229.616" y="165.989" size="1.778" layer="96"/>
+</instance>
+<instance part="R4" gate="G$1" x="228.6" y="180.34" smashed="yes" rot="R270">
+<attribute name="NAME" x="230.0986" y="184.15" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="225.298" y="184.15" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND8" gate="1" x="228.6" y="160.02" smashed="yes">
+<attribute name="VALUE" x="226.06" y="157.48" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -9168,12 +9188,17 @@ Connector</text>
 <segment>
 <pinref part="IC4" gate="G$1" pin="GND"/>
 <pinref part="GND6" gate="1" pin="GND"/>
-<wire x1="193.04" y1="205.74" x2="193.04" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="167.64" x2="190.5" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="172.72" y1="205.74" x2="172.72" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="165.1" x2="167.64" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="GND8" gate="1" pin="GND"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="228.6" y1="162.56" x2="228.6" y2="165.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC_3V3" class="0">
@@ -9224,14 +9249,13 @@ Connector</text>
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="VCC"/>
-<label x="203.2" y="198.12" size="1.27" layer="95" xref="yes"/>
-<wire x1="203.2" y1="198.12" x2="203.2" y2="205.74" width="0.1524" layer="91"/>
+<label x="200.66" y="160.02" size="1.27" layer="95" xref="yes"/>
+<wire x1="200.66" y1="160.02" x2="200.66" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="172.72" y1="213.36" x2="172.72" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="215.9" x2="170.18" y2="215.9" width="0.1524" layer="91"/>
-<label x="170.18" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="167.64" y1="172.72" x2="167.64" y2="177.8" width="0.1524" layer="91"/>
+<label x="167.64" y="177.8" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="MSHUNT_AMP" class="0">
@@ -9306,11 +9330,42 @@ Connector</text>
 <pinref part="MSHUNT" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="MPPT_COUT" class="0">
+<net name="CMPPT_OUT" class="0">
 <segment>
 <pinref part="IC4" gate="G$1" pin="VOUT"/>
-<wire x1="198.12" y1="205.74" x2="198.12" y2="200.66" width="0.1524" layer="91"/>
-<label x="198.12" y="200.66" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="195.58" y1="167.64" x2="195.58" y2="162.56" width="0.1524" layer="91"/>
+<label x="195.58" y="162.56" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="228.6" y1="185.42" x2="228.6" y2="187.96" width="0.1524" layer="91"/>
+<label x="228.6" y="187.96" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="CMPPT_P" class="0">
+<segment>
+<pinref part="IC4" gate="G$1" pin="IP+"/>
+<wire x1="208.28" y1="182.88" x2="213.36" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="182.88" x2="213.36" y2="187.96" width="0.1524" layer="91"/>
+<label x="213.36" y="187.96" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="CMPPT_M" class="0">
+<segment>
+<pinref part="IC4" gate="G$1" pin="IP-"/>
+<wire x1="182.88" y1="182.88" x2="177.8" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="182.88" x2="177.8" y2="187.96" width="0.1524" layer="91"/>
+<label x="177.8" y="187.96" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="CMPPT_F" class="0">
+<segment>
+<pinref part="C9" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="228.6" y1="172.72" x2="228.6" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="175.26" x2="233.68" y2="175.26" width="0.1524" layer="91"/>
+<junction x="228.6" y="175.26"/>
+<label x="233.68" y="175.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
