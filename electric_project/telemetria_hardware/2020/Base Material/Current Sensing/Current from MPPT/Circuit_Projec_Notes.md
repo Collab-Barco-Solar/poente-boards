@@ -15,16 +15,16 @@
 
 ## Introduction
 
-This circuit needs to be able to read currents from 0 to 40A theoretically. To accomplish this task we intend to use a hall sensor. The choice of the sensor can be based on the smaller footprint (in comparison with other alternatives, _i.e_ like shunt resistors).
+This circuit needs to be able to read currents from 0 to 40 A theoretically. To accomplish this task we intend to use a hall sensor. The choice of the sensor can be based on the smaller footprint (in comparison with other alternatives, _i.e_ like shunt resistors).
 
 ## Utilized Components
 
 ### Hall Sensor CI
 
-The hall sensor choosed for this project is the ACS758LCB-050U ([datasheet ACS758](https://github.com/Collab-Barco-Solar/poente-boards/blob/develop/electric_project/telemetria_hardware/2020/Base%20Material/Current%20Sensing/Current%20from%20MPPT/ACS758-Datasheet.pdf)). The ACS758 is an unidirectional hall sensor with an analog output ranging ratiometrically to the voltage supply. From datasheet, the minimal output resistance is 4.7k<span>&#8486;</span>. Some capital caracteristics can be listed:
+The hall sensor choosed for this project is the ACS758LCB-050U ([datasheet ACS758](https://github.com/Collab-Barco-Solar/poente-boards/blob/develop/electric_project/telemetria_hardware/2020/Base%20Material/Current%20Sensing/Current%20from%20MPPT/ACS758-Datasheet.pdf)). The ACS758 is an unidirectional hall sensor with an analog output ranging ratiometrically to the voltage supply. From datasheet, the minimal output resistance is 4.7 k<span>&#8486;</span>. Some capital caracteristics can be listed:
 
 1. Care must be taken about trace widths in view of the high current input;
-2. Some empirical adjusts will be necessary in view of the 3.3V supply (not standard in the datasheet);
+2. Some empirical adjusts will be necessary in view of the 3.3 V supply (not standard in the datasheet);
 3. In view of the transient nature of the MPPT output current.
 
 ### Output Filter
@@ -41,13 +41,9 @@ In the [ACS758 datasheet](https://github.com/Collab-Barco-Solar/poente-boards/bl
 
 |Symbol                |Value                     |
 | -------------------- | ------------------------:|
-|C<sub>load (max)</sub>| 10nF                    |
-|R<sub>load (min)</sub>| 4.7k<span>&#8486;</span>|
+|C<sub>load (max)</sub>| 10 nF                    |
+|R<sub>load (min)</sub>| 4.7 k<span>&#8486;</span>|
 
 #### Filter Design Definition
 
-Thus, based on the ACS758 impedance boundaries the filter must have a resistance equal or greater than 4.7k<span>&#8486;</span> which implies in a limitation in the rate of readings from the ADC (SAR's ADC's). To mantaing this limitation as low as possible, the value of the resistor will be 4.7k<span>&#8486;</span>. Based on the transient caracteristic of the load and for convenience (capacitor values alredy on the project) the filter cut-off frequency will be 338.63 Hz, achieved using a 100nF capacitor.
-
-### Wire-to-Board Connector
-
-The connector chosed for the task is commonlly utilized for Remote Controlled Flying Drones (RC Drones), has a rated current of 30A and maximum current of 60A. The model is the XT60 (more specs can be found in the [datasheet](http/www.somelink.com)).
+Thus, based on the ACS758 impedance boundaries the filter must have a resistance equal or greater than 4.7 k<span>&#8486;</span> which implies in a limitation in the rate of readings from the ADC (SAR's ADC's). To mantaing this limitation as low as possible, the value of the resistor will be 4.7 k<span>&#8486;</span>. Based on the transient caracteristic of the load and for convenience (capacitor values alredy on the project) the filter cut-off frequency will be 338.63 Hz, achieved using a 100 nF capacitor.
