@@ -47,3 +47,13 @@ In the [ACS758 datasheet](https://github.com/Collab-Barco-Solar/poente-boards/bl
 #### Filter Design Definition
 
 Thus, based on the ACS758 impedance boundaries the filter must have a resistance equal or greater than 4.7 k<span>&#8486;</span> which implies in a limitation in the rate of readings from the ADC (SAR's ADC's). To mantaing this limitation as low as possible, the value of the resistor will be 4.7 k<span>&#8486;</span>. Based on the transient caracteristic of the load and for convenience (capacitor values alredy on the project) the filter cut-off frequency will be 338.63 Hz, achieved using a 100 nF capacitor.
+
+## Wire-To-Board Connector
+
+The chosen connector is commonly used in Remote Control Flying Drones (RC drones). A bullet kind connector that has a rated current of 30 A and maximum current of 60 A. The model is the XT60 (specification can be found in [datasheet](https://github.com/Collab-Barco-Solar/poente-boards/blob/develop/electric_project/telemetria_hardware/2020/Base%20Material/Current%20Sensing/Current%20from%20MPPT/Connector%20XT60/XT60%20SPEC.pdf)). The rated current probably won't be a problem since in normal operation the MPPT output current is less than 30 A and the maximum output current is 45 A.
+
+## PCB Design Precautions
+
+In view of the great maximum current that can go through the PCB, some caution must be taken. The main factors are due to heat dissipation and generation. Being so, taking in view that the heat generation is caused by the intrinsic resistance of the rails and connections, effort should be applied to make good connections and to make the rails as wide and as thick as possible.
+
+It's highly recommended the use of some PCB calculation software (like the [Saturn PCB Design Toolkit](http://saturnpcb.com/pcb_toolkit/)) to obtain reliable results about ideal trace width and heat generated. It can save some time of math.
