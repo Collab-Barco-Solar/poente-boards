@@ -3,10 +3,10 @@
 <eagle version="9.5.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -36,8 +36,8 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
@@ -80,6 +80,10 @@
 <wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
 <wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
 <wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
+<rectangle x1="1.016" y1="79.756" x2="12.446" y2="98.984" layer="30"/>
+<rectangle x1="1.016" y1="79.756" x2="12.446" y2="98.984" layer="29" rot="R180"/>
+<rectangle x1="13.716" y1="79.756" x2="25.146" y2="98.984" layer="30"/>
+<rectangle x1="13.716" y1="79.756" x2="25.146" y2="98.984" layer="29" rot="R180"/>
 </plain>
 <libraries>
 <library name="INA240A1DR">
@@ -1609,40 +1613,17 @@ Source: http://www.allegromicro.com/en/Products/Part_Numbers/0758/0758.pdf</desc
 </package3d>
 </packages3d>
 </library>
-<library name="SamacSys_Parts">
-<description>&lt;b&gt;https://componentsearchengine.com&lt;/b&gt;&lt;p&gt;
-&lt;author&gt;Created by SamacSys&lt;/author&gt;</description>
+<library name="XT60">
 <packages>
-<package name="74655095R">
-<description>&lt;b&gt;74655095R-1&lt;/b&gt;&lt;br&gt;
-</description>
-<pad name="1" x="0" y="0" drill="1.85" diameter="3.2"/>
-<pad name="2" x="0" y="-4.435" drill="1.85" diameter="3.2"/>
-<pad name="3" x="0" y="-8.87" drill="1.85" diameter="3.2"/>
-<pad name="4" x="4.435" y="-8.87" drill="1.85" diameter="3.2"/>
-<pad name="5" x="8.87" y="-8.87" drill="1.85" diameter="3.2"/>
-<pad name="6" x="8.87" y="-4.435" drill="1.85" diameter="3.2"/>
-<pad name="7" x="8.87" y="0" drill="1.85" diameter="3.2"/>
-<pad name="8" x="4.435" y="0" drill="1.85" diameter="3.2"/>
-<hole x="4.435" y="-4.435" drill="5"/>
-<text x="4.435" y="-4.435" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="4.435" y="-4.435" size="1.27" layer="27" align="center">&gt;VALUE</text>
-<wire x1="-0.565" y1="0.565" x2="9.435" y2="0.565" width="0.2" layer="51"/>
-<wire x1="9.435" y1="0.565" x2="9.435" y2="-9.435" width="0.2" layer="51"/>
-<wire x1="9.435" y1="-9.435" x2="-0.565" y2="-9.435" width="0.2" layer="51"/>
-<wire x1="-0.565" y1="-9.435" x2="-0.565" y2="0.565" width="0.2" layer="51"/>
-<wire x1="-2.6" y1="2.6" x2="11.47" y2="2.6" width="0.1" layer="51"/>
-<wire x1="11.47" y1="2.6" x2="11.47" y2="-11.47" width="0.1" layer="51"/>
-<wire x1="11.47" y1="-11.47" x2="-2.6" y2="-11.47" width="0.1" layer="51"/>
-<wire x1="-2.6" y1="-11.47" x2="-2.6" y2="2.6" width="0.1" layer="51"/>
-<wire x1="-0.565" y1="-1.935" x2="-0.565" y2="-2.435" width="0.1" layer="21"/>
-<wire x1="-0.565" y1="-6.435" x2="-0.565" y2="-6.935" width="0.1" layer="21"/>
-<wire x1="1.935" y1="-9.435" x2="2.435" y2="-9.435" width="0.1" layer="21"/>
-<wire x1="6.435" y1="-9.435" x2="6.935" y2="-9.435" width="0.1" layer="21"/>
-<wire x1="9.435" y1="-6.435" x2="9.435" y2="-6.935" width="0.1" layer="21"/>
-<wire x1="9.435" y1="-1.935" x2="9.435" y2="-2.435" width="0.1" layer="21"/>
-<wire x1="1.935" y1="0.565" x2="2.435" y2="0.565" width="0.1" layer="21"/>
-<wire x1="6.435" y1="0.565" x2="6.935" y2="0.565" width="0.1" layer="21"/>
+<package name="XT60">
+<pad name="+" x="4.5" y="0" drill="5" shape="octagon"/>
+<pad name="-" x="11.5" y="0" drill="5" shape="octagon"/>
+<wire x1="0" y1="4" x2="12" y2="4" width="0.127" layer="21"/>
+<wire x1="15.5" y1="1.5" x2="15.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="12" y1="4" x2="15.5" y2="1.5" width="0.127" layer="21"/>
+<wire x1="15.5" y1="-1.5" x2="12" y2="-4" width="0.127" layer="21"/>
+<wire x1="12" y1="-4" x2="0" y2="-4" width="0.127" layer="21"/>
+<wire x1="0" y1="-4" x2="0" y2="4" width="0.127" layer="21"/>
 </package>
 </packages>
 </library>
@@ -1655,7 +1636,7 @@ Source: http://www.allegromicro.com/en/Products/Part_Numbers/0758/0758.pdf</desc
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="default">
+<designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -1839,168 +1820,149 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="IC1" library="INA240A1DR" package="SOIC127P600X175-8N" value="INA240A1DR" x="147.32" y="78.105" smashed="yes">
-<attribute name="DESCRIPTION" value="80V, Low-/High-Side, Bi-Directional, Zero-Drift, Current Sense Amp w/Enhanced PWM Rejection" x="200.66" y="74.295" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="1.75mm" x="200.66" y="74.295" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Texas Instruments" x="200.66" y="74.295" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="INA240A1DR" x="200.66" y="74.295" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="595-INA240A1DR" x="200.66" y="74.295" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA240A1DR?qs=AQlKX63v8Rv7XB07RTzuHA%3D%3D" x="200.66" y="74.295" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="142.24" y="78.105" size="1.27" layer="25" rot="R90" align="center"/>
-<attribute name="VALUE" x="147.32" y="81.915" size="1.27" layer="27" align="center"/>
+<element name="IC1" library="INA240A1DR" package="SOIC127P600X175-8N" value="INA240A1DR" x="151.13" y="20.955" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="80V, Low-/High-Side, Bi-Directional, Zero-Drift, Current Sense Amp w/Enhanced PWM Rejection" x="97.79" y="24.765" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="1.75mm" x="97.79" y="24.765" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" x="97.79" y="24.765" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="INA240A1DR" x="97.79" y="24.765" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="595-INA240A1DR" x="97.79" y="24.765" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/INA240A1DR?qs=AQlKX63v8Rv7XB07RTzuHA%3D%3D" x="97.79" y="24.765" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="156.21" y="20.955" size="1.27" layer="25" rot="R270" align="center"/>
+<attribute name="VALUE" x="151.13" y="17.145" size="1.27" layer="27" rot="R180" align="center"/>
 </element>
 <element name="U$1" library="bibliotecattgo" package="TTGOBEAM" value="TTGOBEAM" x="25.4" y="19.05" smashed="yes" rot="R90"/>
-<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF" x="153.035" y="78.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="154.305" y="76.835" size="1.27" layer="25" rot="R180"/>
-<attribute name="POPULARITY" value="63" x="153.035" y="78.74" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="153.035" y="78.74" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="155.575" y="77.47" size="1.27" layer="27" rot="R90"/>
+<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF" x="145.415" y="20.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="144.145" y="22.225" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="63" x="145.415" y="20.32" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="145.415" y="20.32" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="142.875" y="21.59" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10nF" x="155.575" y="78.74" smashed="yes" rot="R90">
-<attribute name="NAME" x="156.845" y="79.375" size="1.27" layer="25" rot="R270"/>
-<attribute name="POPULARITY" value="63" x="155.575" y="78.74" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="155.575" y="78.74" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="158.115" y="77.47" size="1.27" layer="27" rot="R90"/>
+<element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10nF" x="142.875" y="20.32" smashed="yes" rot="R270">
+<attribute name="NAME" x="141.605" y="19.685" size="1.27" layer="25" rot="R90"/>
+<attribute name="POPULARITY" value="63" x="142.875" y="20.32" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="142.875" y="20.32" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="140.335" y="21.59" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="IC2" library="MCP3221A6T-E_OTVAO" package="SOT95P280X145-5N" value="MCP3221A6T-E_OTVAO" x="148.59" y="71.12" smashed="yes" rot="R180">
-<attribute name="DESCRIPTION" value="Analog to Digital Converters - ADC Automotive, 12-bit SAR ADC, I2C, single channel" x="148.59" y="71.12" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="HEIGHT" value="1.45mm" x="148.59" y="71.12" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Microchip" x="148.59" y="71.12" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="MCP3221A6T-E/OTVAO" x="148.59" y="71.12" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="579-MCP3221A6TEOTVAO" x="148.59" y="71.12" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP3221A6T-E-OTVAO?qs=5aG0NVq1C4xIe7K3D%2FHE6g%3D%3D" x="148.59" y="71.12" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="148.59" y="68.58" size="1.27" layer="25" rot="R180" align="center"/>
-<attribute name="VALUE" x="148.59" y="71.12" size="1.27" layer="27" rot="R180" align="center"/>
+<element name="IC2" library="MCP3221A6T-E_OTVAO" package="SOT95P280X145-5N" value="MCP3221A6T-E_OTVAO" x="149.86" y="27.94" smashed="yes">
+<attribute name="DESCRIPTION" value="Analog to Digital Converters - ADC Automotive, 12-bit SAR ADC, I2C, single channel" x="149.86" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="1.45mm" x="149.86" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Microchip" x="149.86" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="MCP3221A6T-E/OTVAO" x="149.86" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="579-MCP3221A6TEOTVAO" x="149.86" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Microchip-Technology/MCP3221A6T-E-OTVAO?qs=5aG0NVq1C4xIe7K3D%2FHE6g%3D%3D" x="149.86" y="27.94" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="149.86" y="30.48" size="1.27" layer="25" align="center"/>
+<attribute name="VALUE" x="149.86" y="27.94" size="1.27" layer="27" align="center"/>
 </element>
-<element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF" x="154.305" y="70.485" smashed="yes" rot="R90">
-<attribute name="NAME" x="155.448" y="68.58" size="1.27" layer="25" rot="R180"/>
-<attribute name="POPULARITY" value="63" x="154.305" y="70.485" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="154.305" y="70.485" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="156.845" y="69.215" size="1.27" layer="27" rot="R90"/>
+<element name="C3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10uF" x="144.145" y="28.575" smashed="yes" rot="R270">
+<attribute name="NAME" x="143.002" y="30.48" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="63" x="144.145" y="28.575" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="144.145" y="28.575" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="141.605" y="29.845" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF" x="151.765" y="70.485" smashed="yes" rot="R90">
-<attribute name="NAME" x="152.908" y="68.58" size="1.27" layer="25" rot="R180"/>
-<attribute name="POPULARITY" value="63" x="151.765" y="70.485" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="151.765" y="70.485" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="154.305" y="69.215" size="1.27" layer="27" rot="R90"/>
+<element name="C4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF" x="146.685" y="28.575" smashed="yes" rot="R270">
+<attribute name="NAME" x="145.542" y="30.48" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="63" x="146.685" y="28.575" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="146.685" y="28.575" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="144.145" y="29.845" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="" x="142.24" y="69.85" smashed="yes" rot="R270">
-<attribute name="NAME" x="141.224" y="66.548" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="85" x="142.24" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="142.24" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="139.7" y="70.485" size="1.27" layer="27" rot="R270"/>
+<element name="R1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="" x="156.21" y="29.21" smashed="yes" rot="R90">
+<attribute name="NAME" x="157.226" y="32.512" size="1.27" layer="25" rot="R180"/>
+<attribute name="POPULARITY" value="85" x="156.21" y="29.21" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="156.21" y="29.21" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="158.75" y="28.575" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="" x="144.78" y="69.85" smashed="yes" rot="R270">
-<attribute name="NAME" x="143.764" y="66.548" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="85" x="144.78" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="144.78" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="142.24" y="70.485" size="1.27" layer="27" rot="R270"/>
+<element name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="" x="153.67" y="29.21" smashed="yes" rot="R90">
+<attribute name="NAME" x="154.686" y="32.512" size="1.27" layer="25" rot="R180"/>
+<attribute name="POPULARITY" value="85" x="153.67" y="29.21" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="153.67" y="29.21" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="156.21" y="28.575" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="MSHUNT" library="CON_MOLEX_53259-0229" package="0532590229" value="53259-0229" x="147.32" y="90.17" smashed="yes" rot="R180">
-<attribute name="DESCRIPTION" value="Headers &amp; Wire Housings 3.5 WtB Wafer Assy R B Wafer Assy RA 2Ckt" x="147.32" y="90.17" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="HEIGHT" value="7mm" x="147.32" y="90.17" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Molex" x="147.32" y="90.17" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="53259-0229" x="147.32" y="90.17" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="538-53259-0229" x="147.32" y="90.17" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Molex/53259-0229?qs=%2Fy5FSpUmAiGN4PmFvaThpA%3D%3D" x="147.32" y="90.17" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="154.305" y="90.17" size="1.27" layer="25" rot="R270" align="center"/>
-<attribute name="VALUE" x="147.32" y="90.17" size="1.27" layer="27" rot="R180" align="center"/>
+<element name="MSHUNT" library="CON_MOLEX_53259-0229" package="0532590229" value="53259-0229" x="151.13" y="8.89" smashed="yes">
+<attribute name="DESCRIPTION" value="Headers &amp; Wire Housings 3.5 WtB Wafer Assy R B Wafer Assy RA 2Ckt" x="151.13" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="7mm" x="151.13" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Molex" x="151.13" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="53259-0229" x="151.13" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="538-53259-0229" x="151.13" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Molex/53259-0229?qs=%2Fy5FSpUmAiGN4PmFvaThpA%3D%3D" x="151.13" y="8.89" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="144.145" y="8.89" size="1.27" layer="25" rot="R90" align="center"/>
+<attribute name="VALUE" x="151.13" y="8.89" size="1.27" layer="27" align="center"/>
 </element>
-<element name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="680R" x="148.59" y="74.295" smashed="yes" rot="R180">
-<attribute name="NAME" x="144.145" y="73.66" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="85" x="148.59" y="74.295" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="148.59" y="74.295" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="149.225" y="76.835" size="1.27" layer="27" rot="R180"/>
+<element name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="680R" x="149.86" y="24.765" smashed="yes">
+<attribute name="NAME" x="154.305" y="25.4" size="1.27" layer="25" rot="R180"/>
+<attribute name="POPULARITY" value="85" x="149.86" y="24.765" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="149.86" y="24.765" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="149.225" y="22.225" size="1.27" layer="27"/>
 </element>
-<element name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF" x="152.654" y="74.295" smashed="yes">
-<attribute name="NAME" x="156.464" y="73.025" size="1.27" layer="25" rot="R90"/>
-<attribute name="POPULARITY" value="63" x="152.654" y="74.295" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="152.654" y="74.295" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="151.384" y="71.755" size="1.27" layer="27"/>
+<element name="C5" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF" x="145.796" y="24.765" smashed="yes" rot="R180">
+<attribute name="NAME" x="141.986" y="26.035" size="1.27" layer="25" rot="R270"/>
+<attribute name="POPULARITY" value="63" x="145.796" y="24.765" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="145.796" y="24.765" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="147.066" y="27.305" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="U$2" library="diy-modules" package="DC-DC-STEP-DOWN-LM2596" override_package3d_urn="urn:adsk.eagle:package:22688648/2" override_package_urn="urn:adsk.eagle:footprint:22688649/1" value="DC-DC-STEP-DOWN-LM2596" x="125.095" y="12.7" smashed="yes" rot="R180">
-<attribute name="NAME" x="125.095" y="1.27" size="1.27" layer="25" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="125.095" y="24.13" size="1.27" layer="27" rot="R180" align="top-center"/>
+<element name="U$2" library="diy-modules" package="DC-DC-STEP-DOWN-LM2596" override_package3d_urn="urn:adsk.eagle:package:22688648/2" override_package_urn="urn:adsk.eagle:footprint:22688649/1" value="DC-DC-STEP-DOWN-LM2596" x="100.965" y="88.9" smashed="yes" rot="R180">
+<attribute name="NAME" x="100.965" y="77.47" size="1.27" layer="25" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="100.965" y="100.33" size="1.27" layer="27" rot="R180" align="top-center"/>
 </element>
-<element name="12V_POWER" library="43650-0200" package="43650-0200" value="43650-0200" x="149.86" y="13.97" smashed="yes" rot="R90">
-<attribute name="DESCRIPTION" value="Header 3.00mm, WTB single row, RA, 2w Molex MICRO-FIT 3.0 Series, Series Number 43650, 3mm Pitch 2 Way 1 Row Shrouded Right Angle PCB Header, Through Hole" x="149.86" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="HEIGHT" value="mm" x="149.86" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Molex" x="149.86" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="43650-0200" x="149.86" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="538-43650-0200" x="149.86" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Molex/43650-0200?qs=HlEFOAM0q6XGaAJJj3Pssw%3D%3D" x="149.86" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="147.955" y="12.7" size="1.27" layer="25" rot="R90" align="center"/>
-<attribute name="VALUE" x="149.86" y="13.97" size="1.27" layer="27" rot="R90" align="center"/>
+<element name="12V_POWER" library="43650-0200" package="43650-0200" value="43650-0200" x="125.73" y="90.17" smashed="yes" rot="R90">
+<attribute name="DESCRIPTION" value="Header 3.00mm, WTB single row, RA, 2w Molex MICRO-FIT 3.0 Series, Series Number 43650, 3mm Pitch 2 Way 1 Row Shrouded Right Angle PCB Header, Through Hole" x="125.73" y="90.17" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="HEIGHT" value="mm" x="125.73" y="90.17" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Molex" x="125.73" y="90.17" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="43650-0200" x="125.73" y="90.17" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="538-43650-0200" x="125.73" y="90.17" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Molex/43650-0200?qs=HlEFOAM0q6XGaAJJj3Pssw%3D%3D" x="125.73" y="90.17" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="123.825" y="88.9" size="1.27" layer="25" rot="R90" align="center"/>
+<attribute name="VALUE" x="125.73" y="90.17" size="1.27" layer="27" rot="R90" align="center"/>
 </element>
-<element name="IC3" library="AZ1117IH-3.3TRG1" package="SOT230P700X170-4N" value="AZ1117IH-3.3TRG1" x="91.44" y="8.255" smashed="yes" rot="R180">
-<attribute name="DESCRIPTION" value="LDO Voltage Regulators LDO BJT HiCurr 1.35A 10Hz to 10KHz" x="91.44" y="8.255" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="HEIGHT" value="1.7mm" x="91.44" y="8.255" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Diodes Inc." x="91.44" y="8.255" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="AZ1117IH-3.3TRG1" x="91.44" y="8.255" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="621-AZ1117IH-3.3TRG1" x="91.44" y="8.255" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AZ1117IH-33TRG1?qs=cpo3%2FpBou2jnS4SxLgAVoA%3D%3D" x="91.44" y="8.255" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="91.44" y="12.7" size="1.27" layer="25" rot="R180" align="center"/>
-<attribute name="VALUE" x="91.44" y="8.255" size="1.27" layer="27" rot="R180" align="center"/>
+<element name="IC3" library="AZ1117IH-3.3TRG1" package="SOT230P700X170-4N" value="AZ1117IH-3.3TRG1" x="67.31" y="84.455" smashed="yes" rot="R180">
+<attribute name="DESCRIPTION" value="LDO Voltage Regulators LDO BJT HiCurr 1.35A 10Hz to 10KHz" x="67.31" y="84.455" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="1.7mm" x="67.31" y="84.455" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Diodes Inc." x="67.31" y="84.455" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="AZ1117IH-3.3TRG1" x="67.31" y="84.455" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PART_NUMBER" value="621-AZ1117IH-3.3TRG1" x="67.31" y="84.455" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Diodes-Incorporated/AZ1117IH-33TRG1?qs=cpo3%2FpBou2jnS4SxLgAVoA%3D%3D" x="67.31" y="84.455" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="67.31" y="88.9" size="1.27" layer="25" rot="R180" align="center"/>
+<attribute name="VALUE" x="67.31" y="84.455" size="1.27" layer="27" rot="R180" align="center"/>
 </element>
-<element name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF" x="89.535" y="3.175" smashed="yes">
-<attribute name="NAME" x="88.265" y="0.635" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="63" x="89.535" y="3.175" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="89.535" y="3.175" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="88.265" y="0.635" size="1.27" layer="27"/>
+<element name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF" x="65.405" y="79.375" smashed="yes">
+<attribute name="NAME" x="64.135" y="76.835" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="63" x="65.405" y="79.375" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="65.405" y="79.375" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="64.135" y="76.835" size="1.27" layer="27"/>
 </element>
-<element name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF" x="97.79" y="8.255" smashed="yes" rot="R270">
-<attribute name="NAME" x="99.06" y="9.525" size="1.27" layer="25" rot="R270"/>
-<attribute name="POPULARITY" value="63" x="97.79" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="97.79" y="8.255" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="95.25" y="9.525" size="1.27" layer="27" rot="R270"/>
+<element name="C7" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="22uF" x="73.66" y="84.455" smashed="yes" rot="R270">
+<attribute name="NAME" x="74.93" y="85.725" size="1.27" layer="25" rot="R270"/>
+<attribute name="POPULARITY" value="63" x="73.66" y="84.455" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="73.66" y="84.455" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="71.12" y="85.725" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="IC4" library="allegro" library_urn="urn:adsk.eagle:library:93" package="CB-PFF" package3d_urn="urn:adsk.eagle:package:3449/1" value="ACS758LCB-050B-PFF-T" x="17.145" y="81.28" smashed="yes">
-<attribute name="MF" value="" x="17.145" y="81.28" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="ACS758LCB-050B-PFF-T" x="17.145" y="81.28" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="13.335" y="73.025" size="1.27" layer="25"/>
-<attribute name="OC_FARNELL" value="1718997" x="17.145" y="81.28" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="04R7131" x="17.145" y="81.28" size="1.778" layer="27" display="off"/>
-<attribute name="POPULARITY" value="0" x="17.145" y="81.28" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="13.335" y="67.945" size="1.27" layer="27"/>
+<element name="IC4" library="allegro" library_urn="urn:adsk.eagle:library:93" package="CB-PFF" package3d_urn="urn:adsk.eagle:package:3449/1" value="ACS758LCB-050B-PFF-T" x="13.081" y="82.804" smashed="yes">
+<attribute name="MF" value="" x="13.081" y="82.804" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="ACS758LCB-050B-PFF-T" x="13.081" y="82.804" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="9.271" y="74.549" size="1.27" layer="25"/>
+<attribute name="OC_FARNELL" value="1718997" x="13.081" y="82.804" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="04R7131" x="13.081" y="82.804" size="1.778" layer="27" display="off"/>
+<attribute name="POPULARITY" value="0" x="13.081" y="82.804" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="9.271" y="69.469" size="1.27" layer="27"/>
 </element>
-<element name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF" x="16.51" y="57.15" smashed="yes">
-<attribute name="NAME" x="15.24" y="54.61" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="63" x="16.51" y="57.15" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="16.51" y="57.15" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="15.24" y="54.61" size="1.27" layer="27"/>
+<element name="C8" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF" x="12.446" y="58.674" smashed="yes">
+<attribute name="NAME" x="11.176" y="56.134" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="63" x="12.446" y="58.674" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="12.446" y="58.674" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="11.176" y="56.134" size="1.27" layer="27"/>
 </element>
-<element name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF" x="24.13" y="56.515" smashed="yes" rot="R270">
-<attribute name="NAME" x="25.4" y="57.785" size="1.27" layer="25" rot="R270"/>
-<attribute name="POPULARITY" value="63" x="24.13" y="56.515" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="24.13" y="56.515" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="21.59" y="57.785" size="1.27" layer="27" rot="R270"/>
+<element name="C9" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF" x="20.066" y="58.039" smashed="yes" rot="R270">
+<attribute name="NAME" x="21.336" y="59.309" size="1.27" layer="25" rot="R270"/>
+<attribute name="POPULARITY" value="63" x="20.066" y="58.039" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="20.066" y="58.039" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="17.526" y="59.309" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="4.7k" x="22.86" y="59.69" smashed="yes">
-<attribute name="NAME" x="22.225" y="60.96" size="1.27" layer="25"/>
-<attribute name="POPULARITY" value="85" x="22.86" y="59.69" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="22.86" y="59.69" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="22.225" y="57.15" size="1.27" layer="27"/>
+<element name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="4.7k" x="18.796" y="61.214" smashed="yes">
+<attribute name="NAME" x="18.161" y="62.484" size="1.27" layer="25"/>
+<attribute name="POPULARITY" value="85" x="18.796" y="61.214" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="18.796" y="61.214" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="18.161" y="58.674" size="1.27" layer="27"/>
 </element>
-<element name="J1" library="SamacSys_Parts" package="74655095R" value="74655095R" x="12.7" y="87.63" smashed="yes" rot="R180">
-<attribute name="DESCRIPTION" value="Wurth Elektronik WP-THRSH 8 Pin PCB Screw Terminal, 85A, Solder, M5" x="12.7" y="87.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="HEIGHT" value="4mm" x="12.7" y="87.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Wurth Elektronik" x="12.7" y="87.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="74655095R" x="12.7" y="87.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="710-74655095R" x="12.7" y="87.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/74655095R?qs=lBTPRtX1sU9%252Bxb2%252Be9OSbA%3D%3D" x="12.7" y="87.63" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="8.265" y="92.065" size="1.27" layer="25" rot="R180" align="center"/>
-<attribute name="VALUE" x="8.265" y="92.065" size="1.27" layer="27" rot="R180" align="center"/>
-</element>
-<element name="J2" library="SamacSys_Parts" package="74655095R" value="74655095R" x="21.59" y="96.52" smashed="yes">
-<attribute name="DESCRIPTION" value="Wurth Elektronik WP-THRSH 8 Pin PCB Screw Terminal, 85A, Solder, M5" x="21.59" y="96.52" size="1.778" layer="27" display="off"/>
-<attribute name="HEIGHT" value="4mm" x="21.59" y="96.52" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_NAME" value="Wurth Elektronik" x="21.59" y="96.52" size="1.778" layer="27" display="off"/>
-<attribute name="MANUFACTURER_PART_NUMBER" value="74655095R" x="21.59" y="96.52" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PART_NUMBER" value="710-74655095R" x="21.59" y="96.52" size="1.778" layer="27" display="off"/>
-<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/74655095R?qs=lBTPRtX1sU9%252Bxb2%252Be9OSbA%3D%3D" x="21.59" y="96.52" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="26.025" y="92.085" size="1.27" layer="25" align="center"/>
-<attribute name="VALUE" x="26.025" y="92.085" size="1.27" layer="27" align="center"/>
-</element>
+<element name="U$3" library="XT60" package="XT60" value="XT60" x="21.082" y="92.456" smashed="yes" rot="R180"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -2023,24 +1985,24 @@ design rules under a new name.</description>
 <contactref element="IC4" pad="2"/>
 <contactref element="C8" pad="2"/>
 <contactref element="C9" pad="2"/>
-<wire x1="153.035" y1="79.69" x2="155.575" y2="79.69" width="0" layer="19" extent="1-1"/>
-<wire x1="150.031" y1="78.74" x2="153.035" y2="79.69" width="0" layer="19" extent="1-1"/>
-<wire x1="153.604" y1="74.295" x2="153.035" y2="79.69" width="0" layer="19" extent="1-1"/>
-<wire x1="154.305" y1="71.435" x2="153.604" y2="74.295" width="0" layer="19" extent="1-1"/>
-<wire x1="151.765" y1="71.435" x2="154.305" y2="71.435" width="0" layer="19" extent="1-1"/>
-<wire x1="149.84" y1="71.12" x2="151.765" y2="71.435" width="0" layer="19" extent="1-1"/>
-<wire x1="144.609" y1="78.74" x2="150.031" y2="78.74" width="0" layer="19" extent="1-1"/>
-<wire x1="144.907" y1="21.336" x2="149.84" y2="71.12" width="0" layer="19" extent="1-1"/>
-<wire x1="149.86" y1="13.97" x2="144.907" y2="21.336" width="0" layer="19" extent="1-1"/>
-<wire x1="105.283" y1="21.336" x2="144.907" y2="21.336" width="0" layer="19" extent="1-1"/>
-<wire x1="97.79" y1="7.305" x2="105.283" y2="21.336" width="0" layer="19" extent="1-1"/>
-<wire x1="94.54" y1="5.955" x2="97.79" y2="7.305" width="0" layer="19" extent="1-1"/>
-<wire x1="90.485" y1="3.175" x2="94.54" y2="5.955" width="0" layer="19" extent="1-1"/>
-<wire x1="37.8" y1="6.05" x2="90.485" y2="3.175" width="0" layer="19" extent="1-1"/>
+<wire x1="145.415" y1="19.37" x2="142.875" y2="19.37" width="0" layer="19" extent="1-1"/>
+<wire x1="148.419" y1="20.32" x2="145.415" y2="19.37" width="0" layer="19" extent="1-1"/>
+<wire x1="144.846" y1="24.765" x2="145.415" y2="19.37" width="0" layer="19" extent="1-1"/>
+<wire x1="144.145" y1="27.625" x2="144.846" y2="24.765" width="0" layer="19" extent="1-1"/>
+<wire x1="146.685" y1="27.625" x2="144.145" y2="27.625" width="0" layer="19" extent="1-1"/>
+<wire x1="148.61" y1="27.94" x2="146.685" y2="27.625" width="0" layer="19" extent="1-1"/>
+<wire x1="153.841" y1="20.32" x2="148.419" y2="20.32" width="0" layer="19" extent="1-1"/>
+<wire x1="120.777" y1="97.536" x2="148.61" y2="27.94" width="0" layer="19" extent="1-1"/>
+<wire x1="125.73" y1="90.17" x2="120.777" y2="97.536" width="0" layer="19" extent="1-1"/>
+<wire x1="81.153" y1="97.536" x2="120.777" y2="97.536" width="0" layer="19" extent="1-1"/>
+<wire x1="73.66" y1="83.505" x2="81.153" y2="97.536" width="0" layer="19" extent="1-1"/>
+<wire x1="70.41" y1="82.155" x2="73.66" y2="83.505" width="0" layer="19" extent="1-1"/>
+<wire x1="66.355" y1="79.375" x2="70.41" y2="82.155" width="0" layer="19" extent="1-1"/>
+<wire x1="37.8" y1="6.05" x2="66.355" y2="79.375" width="0" layer="19" extent="1-1"/>
 <wire x1="22.2" y1="30.95" x2="37.8" y2="6.05" width="0" layer="19" extent="1-1"/>
-<wire x1="24.13" y1="55.565" x2="37.8" y2="6.05" width="0" layer="19" extent="1-1"/>
-<wire x1="17.46" y1="57.15" x2="22.2" y2="30.95" width="0" layer="19" extent="1-1"/>
-<wire x1="17.145" y1="59.88" x2="17.46" y2="57.15" width="0" layer="19" extent="1-1"/>
+<wire x1="20.066" y1="57.089" x2="22.2" y2="30.95" width="0" layer="19" extent="1-1"/>
+<wire x1="13.396" y1="58.674" x2="20.066" y2="57.089" width="0" layer="19" extent="1-1"/>
+<wire x1="13.081" y1="61.404" x2="13.396" y2="58.674" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC_3V3">
 <contactref element="IC1" pad="6"/>
@@ -2059,26 +2021,26 @@ design rules under a new name.</description>
 <contactref element="IC3" pad="2"/>
 <contactref element="IC4" pad="1"/>
 <contactref element="C8" pad="1"/>
-<wire x1="88.585" y1="3.175" x2="88.34" y2="8.255" width="0" layer="19" extent="1-1"/>
-<wire x1="94.54" y1="8.255" x2="88.34" y2="8.255" width="0" layer="19" extent="1-1"/>
-<wire x1="35.2" y1="30.95" x2="94.54" y2="8.255" width="0" layer="19" extent="1-1"/>
+<wire x1="145.415" y1="21.27" x2="142.875" y2="21.27" width="0" layer="19" extent="1-1"/>
+<wire x1="148.419" y1="21.59" x2="145.415" y2="21.27" width="0" layer="19" extent="1-1"/>
+<wire x1="153.841" y1="21.59" x2="148.419" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="148.61" y1="28.89" x2="148.419" y2="21.59" width="0" layer="19" extent="1-1"/>
+<wire x1="146.685" y1="29.525" x2="148.61" y2="28.89" width="0" layer="19" extent="1-1"/>
+<wire x1="144.145" y1="29.525" x2="146.685" y2="29.525" width="0" layer="19" extent="1-1"/>
+<wire x1="153.67" y1="30.16" x2="148.61" y2="28.89" width="0" layer="19" extent="1-1"/>
+<wire x1="156.21" y1="30.16" x2="153.67" y2="30.16" width="0" layer="19" extent="1-1"/>
+<wire x1="70.41" y1="84.455" x2="156.21" y2="30.16" width="0" layer="19" extent="1-1"/>
+<wire x1="64.21" y1="84.455" x2="70.41" y2="84.455" width="0" layer="19" extent="1-1"/>
+<wire x1="64.455" y1="79.375" x2="64.21" y2="84.455" width="0" layer="19" extent="1-1"/>
+<wire x1="35.2" y1="30.95" x2="64.21" y2="84.455" width="0" layer="19" extent="1-1"/>
 <wire x1="24.8" y1="30.95" x2="35.2" y2="30.95" width="0" layer="19" extent="1-1"/>
-<wire x1="15.235" y1="59.88" x2="24.8" y2="30.95" width="0" layer="19" extent="1-1"/>
-<wire x1="15.56" y1="57.15" x2="15.235" y2="59.88" width="0" layer="19" extent="1-1"/>
-<wire x1="142.24" y1="68.9" x2="94.54" y2="8.255" width="0" layer="19" extent="1-1"/>
-<wire x1="144.78" y1="68.9" x2="142.24" y2="68.9" width="0" layer="19" extent="1-1"/>
-<wire x1="149.84" y1="70.17" x2="144.78" y2="68.9" width="0" layer="19" extent="1-1"/>
-<wire x1="151.765" y1="69.535" x2="149.84" y2="70.17" width="0" layer="19" extent="1-1"/>
-<wire x1="154.305" y1="69.535" x2="151.765" y2="69.535" width="0" layer="19" extent="1-1"/>
-<wire x1="150.031" y1="77.47" x2="149.84" y2="70.17" width="0" layer="19" extent="1-1"/>
-<wire x1="153.035" y1="77.79" x2="150.031" y2="77.47" width="0" layer="19" extent="1-1"/>
-<wire x1="155.575" y1="77.79" x2="153.035" y2="77.79" width="0" layer="19" extent="1-1"/>
-<wire x1="144.609" y1="77.47" x2="150.031" y2="77.47" width="0" layer="19" extent="1-1"/>
+<wire x1="11.496" y1="58.674" x2="24.8" y2="30.95" width="0" layer="19" extent="1-1"/>
+<wire x1="11.171" y1="61.404" x2="11.496" y2="58.674" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSHUNT_AMP">
 <contactref element="IC1" pad="5"/>
 <contactref element="R3" pad="2"/>
-<wire x1="150.031" y1="76.2" x2="147.64" y2="74.295" width="0" layer="19" extent="1-1"/>
+<wire x1="150.81" y1="24.765" x2="148.419" y2="22.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="U$1" pad="VP"/>
@@ -2138,15 +2100,15 @@ design rules under a new name.</description>
 <contactref element="U$1" pad="22"/>
 <contactref element="IC2" pad="4"/>
 <contactref element="R1" pad="1"/>
-<wire x1="147.34" y1="72.07" x2="142.24" y2="70.8" width="0" layer="19" extent="1-1"/>
-<wire x1="30" y1="30.95" x2="147.34" y2="72.07" width="0" layer="19" extent="1-1"/>
+<wire x1="156.21" y1="28.26" x2="151.11" y2="26.99" width="0" layer="19" extent="1-1"/>
+<wire x1="30" y1="30.95" x2="156.21" y2="28.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="I2C_SCL">
 <contactref element="U$1" pad="21"/>
 <contactref element="IC2" pad="5"/>
 <contactref element="R2" pad="1"/>
-<wire x1="147.34" y1="70.17" x2="144.78" y2="70.8" width="0" layer="19" extent="1-1"/>
-<wire x1="32.6" y1="30.95" x2="147.34" y2="70.17" width="0" layer="19" extent="1-1"/>
+<wire x1="153.67" y1="28.26" x2="151.11" y2="28.89" width="0" layer="19" extent="1-1"/>
+<wire x1="32.6" y1="30.95" x2="153.67" y2="28.26" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$27">
 <contactref element="U$1" pad="LORA2"/>
@@ -2158,35 +2120,35 @@ design rules under a new name.</description>
 <contactref element="C5" pad="1"/>
 <contactref element="R3" pad="1"/>
 <contactref element="IC2" pad="3"/>
-<wire x1="149.54" y1="74.295" x2="151.704" y2="74.295" width="0" layer="19" extent="1-1"/>
-<wire x1="149.84" y1="72.07" x2="149.54" y2="74.295" width="0" layer="19" extent="1-1"/>
+<wire x1="148.91" y1="24.765" x2="146.746" y2="24.765" width="0" layer="19" extent="1-1"/>
+<wire x1="148.61" y1="26.99" x2="148.91" y2="24.765" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC_12V">
 <contactref element="U$2" pad="IN+"/>
 <contactref element="12V_POWER" pad="2"/>
-<wire x1="144.907" y1="4.064" x2="149.86" y2="10.97" width="0" layer="19" extent="1-1"/>
+<wire x1="120.777" y1="80.264" x2="125.73" y2="87.17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC_5V">
 <contactref element="U$2" pad="OUT+"/>
 <contactref element="IC3" pad="3"/>
 <contactref element="C7" pad="1"/>
-<wire x1="94.54" y1="10.555" x2="97.79" y2="9.205" width="0" layer="19" extent="1-1"/>
-<wire x1="105.283" y1="4.064" x2="94.54" y2="10.555" width="0" layer="19" extent="1-1"/>
+<wire x1="73.66" y1="85.405" x2="81.153" y2="80.264" width="0" layer="19" extent="1-1"/>
+<wire x1="70.41" y1="86.755" x2="73.66" y2="85.405" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSHUNT_M">
 <contactref element="IC1" pad="1"/>
 <contactref element="MSHUNT" pad="2"/>
-<wire x1="144.609" y1="80.01" x2="145.57" y2="86.32" width="0" layer="19" extent="1-1"/>
+<wire x1="153.841" y1="19.05" x2="152.88" y2="12.74" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MSHUNT_B">
 <contactref element="IC1" pad="8"/>
 <contactref element="MSHUNT" pad="1"/>
-<wire x1="150.031" y1="80.01" x2="149.07" y2="86.32" width="0" layer="19" extent="1-1"/>
+<wire x1="148.419" y1="19.05" x2="149.38" y2="12.74" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CMPPT_OUT">
 <contactref element="IC4" pad="3"/>
 <contactref element="R4" pad="1"/>
-<wire x1="21.91" y1="59.69" x2="19.055" y2="59.88" width="0" layer="19" extent="1-1"/>
+<wire x1="14.991" y1="61.404" x2="17.846" y2="61.214" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CMPPT_P">
 <contactref element="IC4" pad="IP+@5" route="any" routetag="G$1.IP+"/>
@@ -2206,22 +2168,36 @@ design rules under a new name.</description>
 <contactref element="IC4" pad="IP+@12" route="any" routetag="G$1.IP+"/>
 <contactref element="IC4" pad="IP+@13" route="any" routetag="G$1.IP+"/>
 <contactref element="IC4" pad="IP+@16" route="any" routetag="G$1.IP+"/>
-<contactref element="J2" pad="1"/>
-<contactref element="J2" pad="3"/>
-<contactref element="J2" pad="2"/>
-<contactref element="J2" pad="4"/>
-<contactref element="J2" pad="5"/>
-<contactref element="J2" pad="8"/>
-<contactref element="J2" pad="7"/>
-<contactref element="J2" pad="6"/>
-<wire x1="30.46" y1="96.52" x2="20.145" y2="79.28" width="0" layer="19" extent="1-1"/>
-<wire x1="26.025" y1="96.52" x2="30.46" y2="96.52" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="96.52" x2="26.025" y2="96.52" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="92.085" x2="21.59" y2="96.52" width="0" layer="19" extent="1-1"/>
-<wire x1="21.59" y1="87.65" x2="21.59" y2="92.085" width="0" layer="19" extent="1-1"/>
-<wire x1="26.025" y1="87.65" x2="21.59" y2="87.65" width="0" layer="19" extent="1-1"/>
-<wire x1="30.46" y1="87.65" x2="26.025" y2="87.65" width="0" layer="19" extent="1-1"/>
-<wire x1="30.46" y1="92.085" x2="30.46" y2="96.52" width="0" layer="19" extent="1-1"/>
+<contactref element="U$3" pad="+"/>
+<wire x1="16.582" y1="92.456" x2="16.582" y2="88.011" width="5.08" layer="1"/>
+<wire x1="20.081" y1="82.804" x2="20.081" y2="84.512" width="5.08" layer="1"/>
+<wire x1="20.081" y1="84.512" x2="16.582" y2="88.011" width="5.08" layer="1"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="25.146" y="98.933"/>
+<vertex x="25.146" y="79.756"/>
+<vertex x="13.716" y="79.756"/>
+<vertex x="13.716" y="98.933"/>
+</polygon>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="13.716" y="98.933"/>
+<vertex x="13.716" y="79.756"/>
+<vertex x="25.146" y="79.756"/>
+<vertex x="25.146" y="98.933"/>
+</polygon>
+<via x="16.256" y="87.249" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="23.876" y="80.899" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="23.876" y="84.709" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="23.876" y="88.519" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="20.066" y="87.249" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="23.876" y="92.329" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="23.876" y="96.774" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="20.701" y="96.139" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="18.161" y="98.044" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="14.351" y="98.044" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="19.431" y="89.789" extent="1-16" drill="0.4" diameter="0.55"/>
+<via x="20.701" y="92.329" extent="1-16" drill="0.4" diameter="0.55"/>
+<via x="19.431" y="94.869" extent="1-16" drill="0.4" diameter="0.55"/>
+<via x="15.621" y="96.139" extent="1-16" drill="0.4" diameter="0.55"/>
 </signal>
 <signal name="CMPPT_M">
 <contactref element="IC4" pad="IP-@4" route="any" routetag="G$1.IP-"/>
@@ -2241,27 +2217,41 @@ design rules under a new name.</description>
 <contactref element="IC4" pad="IP-@8" route="any" routetag="G$1.IP-"/>
 <contactref element="IC4" pad="IP-@14" route="any" routetag="G$1.IP-"/>
 <contactref element="IC4" pad="IP-@10" route="any" routetag="G$1.IP-"/>
-<contactref element="J1" pad="1"/>
-<contactref element="J1" pad="4"/>
-<contactref element="J1" pad="3"/>
-<contactref element="J1" pad="2"/>
-<contactref element="J1" pad="5"/>
-<contactref element="J1" pad="8"/>
-<contactref element="J1" pad="7"/>
-<contactref element="J1" pad="6"/>
-<wire x1="8.265" y1="87.63" x2="12.82" y2="79.28" width="0" layer="19" extent="1-1"/>
-<wire x1="3.83" y1="87.63" x2="8.265" y2="87.63" width="0" layer="19" extent="1-1"/>
-<wire x1="3.83" y1="92.065" x2="3.83" y2="87.63" width="0" layer="19" extent="1-1"/>
-<wire x1="12.7" y1="87.63" x2="8.265" y2="87.63" width="0" layer="19" extent="1-1"/>
-<wire x1="12.7" y1="92.065" x2="12.7" y2="87.63" width="0" layer="19" extent="1-1"/>
-<wire x1="12.7" y1="96.5" x2="12.7" y2="92.065" width="0" layer="19" extent="1-1"/>
-<wire x1="8.265" y1="96.5" x2="12.7" y2="96.5" width="0" layer="19" extent="1-1"/>
-<wire x1="3.83" y1="96.5" x2="3.83" y2="92.065" width="0" layer="19" extent="1-1"/>
+<contactref element="U$3" pad="-"/>
+<wire x1="6.081" y1="82.804" x2="6.081" y2="84.51" width="5.08" layer="1"/>
+<wire x1="9.582" y1="88.011" x2="6.081" y2="84.51" width="5.08" layer="1"/>
+<wire x1="9.582" y1="92.456" x2="9.582" y2="88.011" width="5.08" layer="1"/>
+<polygon width="0.1524" layer="1" thermals="no">
+<vertex x="1.016" y="79.756"/>
+<vertex x="1.016" y="98.933"/>
+<vertex x="12.446" y="98.933"/>
+<vertex x="12.446" y="79.756"/>
+</polygon>
+<polygon width="0.1524" layer="16" thermals="no">
+<vertex x="1.016" y="79.756"/>
+<vertex x="1.016" y="98.933"/>
+<vertex x="12.446" y="98.933"/>
+<vertex x="12.446" y="79.756"/>
+</polygon>
+<via x="2.286" y="80.899" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="2.286" y="84.709" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="2.286" y="88.519" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="2.286" y="92.329" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="2.286" y="96.139" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="6.096" y="87.249" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="9.906" y="87.249" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="5.461" y="96.139" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="8.001" y="98.044" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="11.811" y="98.044" extent="1-16" drill="0.5" diameter="0.75"/>
+<via x="9.906" y="96.139" extent="1-16" drill="0.4" diameter="0.55"/>
+<via x="6.731" y="94.869" extent="1-16" drill="0.4" diameter="0.55"/>
+<via x="5.461" y="92.329" extent="1-16" drill="0.4" diameter="0.55"/>
+<via x="6.731" y="89.789" extent="1-16" drill="0.4" diameter="0.55"/>
 </signal>
 <signal name="CMPPT_F">
 <contactref element="C9" pad="1"/>
 <contactref element="R4" pad="2"/>
-<wire x1="24.13" y1="57.465" x2="23.81" y2="59.69" width="0" layer="19" extent="1-1"/>
+<wire x1="20.066" y1="58.989" x2="19.746" y2="61.214" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
