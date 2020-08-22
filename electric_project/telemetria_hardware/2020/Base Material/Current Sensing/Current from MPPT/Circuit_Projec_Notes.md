@@ -29,7 +29,7 @@ The hall sensor choosed for this project is the ACS758LCB-050U ([datasheet ACS75
 
 ### Output Filter
 
-The filter circuit is a sensitive design and a lot a thought must be putted on. The RC input impedance of the filter can interfere and cause reading errors on the ADC. So, a good practice is to mantain the RC impedance as low as possible (witch can cause high output current from the sensor) and to achieve this goal  a balance must be made between the lowest possible impedance and the lowest dissipated power.
+The filter circuit is a sensitive design and a lot a thought must be putted on. The RC input impedance of the filter can interfere and cause reading errors on the ADC. So, a good practice is to maintain the RC impedance as low as possible (witch can cause high output current from the sensor) and to achieve this goal  a balance must be made between the lowest possible impedance and the lowest dissipated power.
 
 #### ADC Impedance Characteristics
 
