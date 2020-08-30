@@ -1,0 +1,14 @@
+* C:\Users\Temporaria\Documents\GitHub\poente-boards\electric_project\telemetria_hardware\2020\Base Material\Voltage Sensing\Voltage of Battery Bank\Circuit Simulations\BatBank_Vin_simulations v0.asc
+R1 Vbat Out_1 220k tol=1 pwr=0.1
+R2 Out_1 0 13.3K tol=1 pwr=0.1
+B1 Vbat 0 V=(48 + 5*(white(1e6*time/10)) + white(2e8*time/10))
+C1 Out_1 0 1n V=100 Irms=940m Rser=0.0607607 Lser=0
+V1 v+ 0 30
+R3 0 out 100K
+XU1 Out_1 out v+ 0 out LT1013
+R4 out 0 1k
+.tran 0.5m
+* The LT1014A here is simulating the PGA on ADS1115.\nThough his CMM input impedance is 1000x higher, i think it still a good comparision (10M to 4G ohm)
+.lib LTC.lib
+.backanno
+.end

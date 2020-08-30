@@ -1,0 +1,45 @@
+Circuit: * C:\Users\Temporaria\Documents\GitHub\poente-boards\electric_project\telemetria_hardware\2020\Base Material\Voltage Sensing\Voltage of Battery Bank\Circuit Simulations\BatBank_Vin_simulations v0.asc
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+Gmin = 0.115292
+Gmin = 0.0123794
+Gmin = 0.00132923
+Gmin = 0.000142725
+Gmin = 1.5325e-005
+Gmin = 1.6455e-006
+vernier = 0.5
+vernier = 0.666667
+Gmin = 5.75037e-007
+vernier = 0.888888
+vernier = 1
+Gmin = 8.6905e-008
+Gmin = 9.33136e-009
+Gmin = 1.00195e-009
+Gmin = 1.07583e-010
+Gmin = 1.15517e-011
+Gmin = 1.24035e-012
+Gmin = 1.33182e-013
+Gmin = 0
+Gmin stepping succeeded in finding the operating point.
+
+
+Date: Sun Aug 30 12:22:18 2020
+Total elapsed time: 0.421 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 12392
+traniter = 11884
+tranpoints = 5943
+accept = 4121
+rejected = 1822
+matrix size = 11
+fillins = 7
+solver = Normal
+Matrix Compiler1: 572 bytes object code size  0.1/0.1/[0.1]
+Matrix Compiler2: 965 bytes object code size  0.1/0.2/[0.1]
+
