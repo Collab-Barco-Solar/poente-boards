@@ -9230,7 +9230,7 @@ alternativa pra esse conector</text>
 <wire x1="116.84" y1="218.44" x2="116.84" y2="162.56" width="0.1524" layer="94"/>
 <wire x1="116.84" y1="162.56" x2="172.72" y2="162.56" width="0.1524" layer="94"/>
 <wire x1="172.72" y1="162.56" x2="172.72" y2="218.44" width="0.1524" layer="94"/>
-<text x="134.62" y="210.82" size="1.778" layer="94">PV Modules
+<text x="134.62" y="210.82" size="1.778" layer="94">Battery Bank
 Voltage Measurement</text>
 </plain>
 <instances>
