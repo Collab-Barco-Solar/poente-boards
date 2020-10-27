@@ -27,6 +27,7 @@ Sempre que se pretender alterar o circuito principal é necessário:
 2. À pasta cópia deve ser atribuída um nome com nova versão (alterando o algarismo decimal) em que o nome do editior é adicionado ao nome da pasta juntamente com a frase "editando".
 
 >  /Versao 1_01 (lorem - editando)
+
 ![alt text](documents_images/project_editando.png)
 
 3. A nova pasta com a frase "editando" deve ser commitada antes que as alterações comecem a ser feitas.
