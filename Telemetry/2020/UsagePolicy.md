@@ -2,14 +2,14 @@
 
 # Política de Uso - Hardware T.G.E
 
-Neste documento serao explicitadas políticas de uso para o repositório de hardware da Telemetria e Gerenciamento Energético.
+Neste documento serão explicitadas políticas de uso para o repositório de hardware da Telemetria e Gerenciamento Energético.
 
 ## Branches
 
-Tarefas de pesquisa e projeto de circuitos são feitas no branch develop. Caso julgue necessário é permitida a criação de novos branches, contanto que seja justificável. Os produtos amplamente testados são levados para o branch **Master**.
+Tarefas de pesquisa e projeto de circuitos são feitas no branch develop. Caso julgue necessário, é permitida a criação de novos branches, contanto que seja justificável. Os produtos amplamente testados são levados para o branch **Master**.
 ## Pulls
 
-Antes de iniciar o trabalho **sempre faça pull no repositório** a fim de garantir que estará utilizando a versão mais recente e, com isso, diminuir as chances de conflitos.
+Antes de iniciar o trabalho, **sempre faça pull no repositório** a fim de garantir que estará utilizando a versão mais recente e, com isso, diminuir as chances de conflitos.
 
 ## Commits
 
@@ -24,7 +24,7 @@ Materiais como datasheets, imagens e links de refêrencia podem sofrer commits s
 Sempre que se pretender alterar o circuito principal é necessário:
 1. Criar uma cópia da pasta da última versão do projeto:
 ![alt text](documents_images/project_copy.png)
-2. À pasta cópia deve ser atribuída um nome com nova versão (alterando o algarismo decimal) em que o nome do editior é adicionado ao nome da pasta juntamente com a frase "editando".
+2. À pasta cópia deve ser atribuída um nome com nova versão (alterando o algarismo decimal) em que o nome do editor é adicionado ao nome da pasta juntamente com a frase "editando".
 
 >  /Versao 1_01 (lorem - editando)
 
