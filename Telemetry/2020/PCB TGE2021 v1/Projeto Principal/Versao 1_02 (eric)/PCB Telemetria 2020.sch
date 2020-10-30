@@ -8915,11 +8915,11 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/ADS1115"&gt; Datasheet &lt;/a&gt;<
 </deviceset>
 </devicesets>
 </library>
-<library name="ACS712ELCTR30AT">
+<library name="ACS712ELCTR-05B-T">
 <packages>
 <package name="SOIC127P600X175-8N">
-<circle x="-4.37" y="2.505" radius="0.1" width="0.2" layer="21"/>
-<circle x="-4.37" y="2.505" radius="0.1" width="0.2" layer="51"/>
+<circle x="-4.445" y="2.505" radius="0.1" width="0.2" layer="21"/>
+<circle x="-4.445" y="2.505" radius="0.1" width="0.2" layer="51"/>
 <wire x1="-2" y1="2.5" x2="2" y2="2.5" width="0.127" layer="51"/>
 <wire x1="-2" y1="-2.5" x2="2" y2="-2.5" width="0.127" layer="51"/>
 <wire x1="-2" y1="2.525" x2="2" y2="2.525" width="0.127" layer="21"/>
@@ -8930,8 +8930,8 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/ADS1115"&gt; Datasheet &lt;/a&gt;<
 <wire x1="-3.71" y1="-2.75" x2="3.71" y2="-2.75" width="0.05" layer="39"/>
 <wire x1="-3.71" y1="2.75" x2="-3.71" y2="-2.75" width="0.05" layer="39"/>
 <wire x1="3.71" y1="2.75" x2="3.71" y2="-2.75" width="0.05" layer="39"/>
-<text x="-3.91" y="-2.702" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
-<text x="-3.91" y="2.702" size="1.27" layer="25">&gt;NAME</text>
+<text x="-3.97" y="-2.702" size="1.27" layer="27" align="top-left">&gt;VALUE</text>
+<text x="-3.97" y="2.702" size="1.27" layer="25">&gt;NAME</text>
 <smd name="1" x="-2.475" y="1.905" dx="1.97" dy="0.6" layer="1" roundness="25"/>
 <smd name="2" x="-2.475" y="0.635" dx="1.97" dy="0.6" layer="1" roundness="25"/>
 <smd name="3" x="-2.475" y="-0.635" dx="1.97" dy="0.6" layer="1" roundness="25"/>
@@ -8943,45 +8943,46 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/ADS1115"&gt; Datasheet &lt;/a&gt;<
 </package>
 </packages>
 <symbols>
-<symbol name="ACS712ELCTR30AT">
-<wire x1="-12.7" y1="10.16" x2="-12.7" y2="-10.16" width="0.4064" layer="94"/>
-<wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.4064" layer="94"/>
-<wire x1="12.7" y1="-10.16" x2="12.7" y2="10.16" width="0.4064" layer="94"/>
-<wire x1="12.7" y1="10.16" x2="-12.7" y2="10.16" width="0.4064" layer="94"/>
-<text x="-12.8864" y="10.1087" size="2.08621875" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-13.6476" y="-12.7569" size="2.08746875" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-<pin name="VCC" x="17.78" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<symbol name="ACS712ELCTR-05B-T">
+<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.41" layer="94"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.41" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.41" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.41" layer="94"/>
+<text x="-12.7" y="13.7" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-12.7" y="-16.7" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
+<pin name="FILTER" x="-17.78" y="5.08" length="middle" direction="in"/>
 <pin name="IP+" x="-17.78" y="2.54" length="middle" direction="in"/>
-<pin name="IP-" x="-17.78" y="-2.54" length="middle" direction="in"/>
-<pin name="FILTER" x="17.78" y="-2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="IP-" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="VCC" x="17.78" y="10.16" length="middle" direction="pwr" rot="R180"/>
+<pin name="VIOUT" x="17.78" y="5.08" length="middle" direction="out" rot="R180"/>
 <pin name="GND" x="17.78" y="-7.62" length="middle" direction="pwr" rot="R180"/>
-<pin name="VIOUT" x="17.78" y="2.54" length="middle" direction="out" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ACS712ELCTR30AT" prefix="U">
-<description>Sensor: current; Package: SO8; Usup: 4.5÷5.5VDC; Iin: ± 30A; 66mV &lt;a href="https://pricing.snapeda.com/parts/ACS712ELCTR-30A-T/Allegro/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
+<deviceset name="ACS712ELCTR-05B-T" prefix="U">
+<description> &lt;a href="https://pricing.snapeda.com/parts/ACS712ELCTR-05B-T/Allegro%20MicroSystems%20LLC/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="ACS712ELCTR30AT" x="0" y="0"/>
+<gate name="A" symbol="ACS712ELCTR-05B-T" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOIC127P600X175-8N">
 <connects>
-<connect gate="G$1" pin="FILTER" pad="6"/>
-<connect gate="G$1" pin="GND" pad="5"/>
-<connect gate="G$1" pin="IP+" pad="1 2"/>
-<connect gate="G$1" pin="IP-" pad="3 4"/>
-<connect gate="G$1" pin="VCC" pad="8"/>
-<connect gate="G$1" pin="VIOUT" pad="7"/>
+<connect gate="A" pin="FILTER" pad="6"/>
+<connect gate="A" pin="GND" pad="5"/>
+<connect gate="A" pin="IP+" pad="1 2"/>
+<connect gate="A" pin="IP-" pad="3 4"/>
+<connect gate="A" pin="VCC" pad="8"/>
+<connect gate="A" pin="VIOUT" pad="7"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="AVAILABILITY" value="Warning"/>
-<attribute name="DESCRIPTION" value=" Current Sensor 30A 1 Channel Hall Effect, Open Loop Bidirectional 8-SOIC (0.154, 3.90mm Width) "/>
-<attribute name="MF" value="Allegro"/>
-<attribute name="MP" value="ACS712ELCTR-30A-T"/>
+<attribute name="DESCRIPTION" value=" Current Sensor 5A 1 Channel Hall Effect, Open Loop Bidirectional 8-SOIC (0.154, 3.90mm Width) "/>
+<attribute name="MF" value="Allegro MicroSystems LLC"/>
+<attribute name="MP" value="ACS712ELCTR-05B-T"/>
 <attribute name="PACKAGE" value="SOIC-8 Allegro MicroSystems LLC"/>
 <attribute name="PRICE" value="None"/>
+<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/ACS712ELCTR-05B-T/?ref=eda"/>
 </technology>
 </technologies>
 </device>
@@ -9056,7 +9057,7 @@ Source: &lt;a href="http://www.ti.com/lit/gpn/ADS1115"&gt; Datasheet &lt;/a&gt;<
 <part name="C15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
 <part name="R15" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="4.7k"/>
 <part name="GND17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="U1" library="ACS712ELCTR30AT" deviceset="ACS712ELCTR30AT" device=""/>
+<part name="U2" library="ACS712ELCTR-05B-T" deviceset="ACS712ELCTR-05B-T" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9507,9 +9508,9 @@ Filter</text>
 <instance part="GND17" gate="1" x="353.06" y="152.4" smashed="yes" rot="R90">
 <attribute name="VALUE" x="355.6" y="149.86" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U1" gate="G$1" x="337.82" y="185.42" smashed="yes">
-<attribute name="NAME" x="324.9336" y="195.5287" size="2.08621875" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="324.1724" y="172.6631" size="2.08746875" layer="96" ratio="10" rot="SR0"/>
+<instance part="U2" gate="A" x="337.82" y="185.42" smashed="yes">
+<attribute name="NAME" x="325.12" y="199.12" size="2.0828" layer="95" ratio="10" rot="SR0"/>
+<attribute name="VALUE" x="325.12" y="168.72" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
 </instances>
 <busses>
@@ -9627,7 +9628,7 @@ Filter</text>
 <segment>
 <pinref part="GND15" gate="1" pin="GND"/>
 <wire x1="355.6" y1="177.8" x2="368.3" y2="177.8" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="GND"/>
+<pinref part="U2" gate="A" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C14" gate="G$1" pin="2"/>
@@ -9640,10 +9641,10 @@ Filter</text>
 <wire x1="350.52" y1="152.4" x2="347.98" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="314.96" y1="182.88" x2="314.96" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="185.42" x2="314.96" y2="177.8" width="0.1524" layer="91"/>
 <label x="314.96" y="177.8" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="IP-"/>
-<wire x1="320.04" y1="182.88" x2="314.96" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="320.04" y1="185.42" x2="314.96" y2="185.42" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="IP-"/>
 </segment>
 </net>
 <net name="VCC_3V3" class="0">
@@ -9713,9 +9714,9 @@ Filter</text>
 <wire x1="93.98" y1="198.12" x2="96.52" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="365.76" y="193.04" size="1.27" layer="95" xref="yes"/>
-<wire x1="365.76" y1="193.04" x2="355.6" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="VCC"/>
+<label x="365.76" y="195.58" size="1.27" layer="95" xref="yes"/>
+<wire x1="365.76" y1="195.58" x2="355.6" y2="195.58" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="VCC"/>
 </segment>
 </net>
 <net name="MSHUNT_AMP" class="0">
@@ -9949,17 +9950,17 @@ Filter</text>
 <label x="243.84" y="180.34" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<wire x1="314.96" y1="187.96" x2="314.96" y2="195.58" width="0.1524" layer="91"/>
-<label x="314.96" y="195.58" size="1.27" layer="95" rot="R90" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="IP+"/>
-<wire x1="320.04" y1="187.96" x2="314.96" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="187.96" x2="302.26" y2="195.58" width="0.1524" layer="91"/>
+<label x="302.26" y="195.58" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="320.04" y1="187.96" x2="302.26" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="U2" gate="A" pin="IP+"/>
 </segment>
 </net>
 <net name="HS_OUT" class="0">
 <segment>
-<wire x1="355.6" y1="187.96" x2="365.76" y2="187.96" width="0.1524" layer="91"/>
-<label x="365.76" y="187.96" size="1.27" layer="95" xref="yes"/>
-<pinref part="U1" gate="G$1" pin="VIOUT"/>
+<wire x1="355.6" y1="190.5" x2="365.76" y2="190.5" width="0.1524" layer="91"/>
+<label x="365.76" y="190.5" size="1.27" layer="95" xref="yes"/>
+<pinref part="U2" gate="A" pin="VIOUT"/>
 </segment>
 <segment>
 <pinref part="R15" gate="G$1" pin="1"/>
@@ -9972,9 +9973,9 @@ Filter</text>
 <pinref part="C15" gate="G$1" pin="1"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="340.36" y1="152.4" x2="337.82" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="337.82" y1="152.4" x2="337.82" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="152.4" x2="337.82" y2="154.94" width="0.1524" layer="91"/>
 <junction x="337.82" y="152.4"/>
-<label x="337.82" y="157.48" size="1.27" layer="95" rot="R90" xref="yes"/>
+<label x="337.82" y="154.94" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="HS_FILTER" class="0">
@@ -9984,9 +9985,9 @@ Filter</text>
 <label x="302.26" y="170.18" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="FILTER"/>
-<wire x1="355.6" y1="182.88" x2="365.76" y2="182.88" width="0.1524" layer="91"/>
-<label x="365.76" y="182.88" size="1.27" layer="95" xref="yes"/>
+<wire x1="320.04" y1="190.5" x2="317.5" y2="190.5" width="0.1524" layer="91"/>
+<label x="317.5" y="190.5" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U2" gate="A" pin="FILTER"/>
 </segment>
 </net>
 </nets>
