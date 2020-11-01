@@ -115,14 +115,14 @@
 </connects>
 <technologies>
 <technology name="">
+<attribute name="Package" value="SOIC-8 Allegro MicroSystems LLC"/>
 <attribute name="Description" value="
 Current Sensor 30A 1 Channel Hall Effect, Open Loop Bidirectional 8-SOIC (0.154, 3.90mm Width)
 "/>
+<attribute name="MP" value="ACS712ELCTR-30A-T"/>
 <attribute name="Price" value="None"/>
 <attribute name="MF" value="Allegro"/>
 <attribute name="Availability" value="Warning"/>
-<attribute name="Package" value="SOIC-8 Allegro MicroSystems LLC"/>
-<attribute name="MP" value="ACS712ELCTR-30A-T"/>
 </technology>
 </technologies>
 </device>
