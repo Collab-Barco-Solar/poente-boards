@@ -8925,6 +8925,48 @@ Source: http://www.allegromicro.com/en/Products/Part_Numbers/0758/0758.pdf</desc
 <wire x1="2.52" y1="1.298" x2="-2.52" y2="1.298" width="0.2" layer="21"/>
 <wire x1="-2.52" y1="-1.298" x2="2.52" y2="-1.298" width="0.2" layer="21"/>
 </package>
+<package name="43045-0412">
+<description>&lt;b&gt;43045-0412&lt;/b&gt;&lt;br&gt;
+</description>
+<pad name="1" x="6.325" y="2.47" drill="1.07" diameter="1.62"/>
+<pad name="2" x="3.325" y="2.47" drill="1.07" diameter="1.62"/>
+<pad name="3" x="6.325" y="5.47" drill="1.07" diameter="1.62"/>
+<pad name="4" x="3.325" y="5.47" drill="1.07" diameter="1.62"/>
+<pad name="5" x="0.325" y="6.41" drill="1.07" diameter="1.62"/>
+<pad name="6" x="9.325" y="6.41" drill="1.07" diameter="1.62"/>
+<text x="4.498" y="3.873" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="4.498" y="3.873" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="0" y1="7.37" x2="9.65" y2="7.37" width="0.254" layer="51"/>
+<wire x1="9.65" y1="7.37" x2="9.65" y2="0" width="0.254" layer="51"/>
+<wire x1="9.65" y1="0" x2="0" y2="0" width="0.254" layer="51"/>
+<wire x1="0" y1="0" x2="0" y2="7.37" width="0.254" layer="51"/>
+<wire x1="0" y1="7.37" x2="9.65" y2="7.37" width="0.254" layer="21"/>
+<wire x1="9.65" y1="0" x2="0" y2="0" width="0.254" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="5.431" width="0.254" layer="21"/>
+<wire x1="9.65" y1="0" x2="9.65" y2="5.459" width="0.254" layer="21"/>
+<circle x="10.091" y="2.018" radius="0.086309375" width="0.254" layer="25"/>
+</package>
+<package name="SOT65P210X110-5N">
+<description>&lt;b&gt;DCK Package 5-Pin SC70&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-0.95" y="0.65" dx="1.2" dy="0.4" layer="1"/>
+<smd name="2" x="-0.95" y="0" dx="1.2" dy="0.4" layer="1"/>
+<smd name="3" x="-0.95" y="-0.65" dx="1.2" dy="0.4" layer="1"/>
+<smd name="4" x="0.95" y="-0.65" dx="1.2" dy="0.4" layer="1"/>
+<smd name="5" x="0.95" y="0.65" dx="1.2" dy="0.4" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-1.8" y1="1.325" x2="1.8" y2="1.325" width="0.05" layer="51"/>
+<wire x1="1.8" y1="1.325" x2="1.8" y2="-1.325" width="0.05" layer="51"/>
+<wire x1="1.8" y1="-1.325" x2="-1.8" y2="-1.325" width="0.05" layer="51"/>
+<wire x1="-1.8" y1="-1.325" x2="-1.8" y2="1.325" width="0.05" layer="51"/>
+<wire x1="-0.625" y1="1" x2="0.625" y2="1" width="0.1" layer="51"/>
+<wire x1="0.625" y1="1" x2="0.625" y2="-1" width="0.1" layer="51"/>
+<wire x1="0.625" y1="-1" x2="-0.625" y2="-1" width="0.1" layer="51"/>
+<wire x1="-0.625" y1="-1" x2="-0.625" y2="1" width="0.1" layer="51"/>
+<wire x1="-0.625" y1="0.35" x2="0.025" y2="1" width="0.1" layer="51"/>
+<wire x1="-1.55" y1="1.1" x2="-0.35" y2="1.1" width="0.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ADS1115IDGSR">
@@ -8975,6 +9017,31 @@ Source: http://www.allegromicro.com/en/Products/Part_Numbers/0758/0758.pdf</desc
 <text x="15.24" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="1" x="0" y="0" visible="pad" length="middle"/>
 <pin name="2" x="20.32" y="0" visible="pad" length="middle" rot="R180"/>
+</symbol>
+<symbol name="43045-0412">
+<wire x1="5.08" y1="2.54" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="2.54" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
+<text x="16.51" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="16.51" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="1" x="0" y="0" length="middle"/>
+<pin name="2" x="0" y="-2.54" length="middle"/>
+<pin name="3" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="4" x="20.32" y="-2.54" length="middle" rot="R180"/>
+</symbol>
+<symbol name="TMP235AEDCKRQ1">
+<wire x1="5.08" y1="2.54" x2="22.86" y2="2.54" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-7.62" x2="22.86" y2="2.54" width="0.254" layer="94"/>
+<wire x1="22.86" y1="-7.62" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-7.62" width="0.254" layer="94"/>
+<text x="24.13" y="7.62" size="1.778" layer="95" align="center-left">&gt;NAME</text>
+<text x="24.13" y="5.08" size="1.778" layer="96" align="center-left">&gt;VALUE</text>
+<pin name="NC_1" x="0" y="0" length="middle"/>
+<pin name="GND" x="0" y="-2.54" length="middle"/>
+<pin name="VOUT" x="0" y="-5.08" length="middle"/>
+<pin name="VDD" x="27.94" y="0" length="middle" rot="R180"/>
+<pin name="NC_2" x="27.94" y="-2.54" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9062,6 +9129,61 @@ Source: &lt;a href="https://www.mouser.se/datasheet/2/240/Littelfuse_TVS_Diode_S
 <attribute name="MANUFACTURER_PART_NUMBER" value="SMAJ30CA" constant="no"/>
 <attribute name="MOUSER_PART_NUMBER" value="576-SMAJ30CA" constant="no"/>
 <attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Littelfuse/SMAJ30CA?qs=HR2RnyOI4E7JQai5qAA1IA%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="43045-0412" prefix="J">
+<description>&lt;b&gt;Headers &amp; Wire Housings 4 CKT VERT HEADER&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href=""&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="43045-0412" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="43045-0412">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Headers &amp; Wire Housings 4 CKT VERT HEADER" constant="no"/>
+<attribute name="HEIGHT" value="mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Molex" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="43045-0412" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="538-43045-0412" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Molex/43045-0412?qs=UeCeOHRHQebPBbEMDLocEw%3D%3D" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TMP235AEDCKRQ1" prefix="IC">
+<description>&lt;b&gt;Board Mount Temperature Sensors Automotive grade, +/-0.5C analog output temperature sensor with 10 mV/C gain 5-SC70 -40 to 150&lt;/b&gt;&lt;p&gt;
+Source: &lt;a href="https://www.ti.com/lit/gpn/TMP235-Q1"&gt; Datasheet &lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="TMP235AEDCKRQ1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT65P210X110-5N">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="NC_1" pad="1"/>
+<connect gate="G$1" pin="NC_2" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
+<connect gate="G$1" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DESCRIPTION" value="Board Mount Temperature Sensors Automotive grade, +/-0.5C analog output temperature sensor with 10 mV/C gain 5-SC70 -40 to 150" constant="no"/>
+<attribute name="HEIGHT" value="1.1mm" constant="no"/>
+<attribute name="MANUFACTURER_NAME" value="Texas Instruments" constant="no"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="TMP235AEDCKRQ1" constant="no"/>
+<attribute name="MOUSER_PART_NUMBER" value="595-TMP235AEDCKRQ1" constant="no"/>
+<attribute name="MOUSER_PRICE-STOCK" value="https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TMP235AEDCKRQ1?qs=T3oQrply3y86j8c6PmMwyA%3D%3D" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -9341,87 +9463,6 @@ In this library the device names are the same as the pin names of the symbols, t
 </deviceset>
 </devicesets>
 </library>
-<library name="TMP100NA_3K">
-<packages>
-<package name="SOT95P280X145-6N">
-<wire x1="0.8" y1="1.45" x2="-0.8" y2="1.45" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="1.45" x2="-0.8" y2="-1.45" width="0.127" layer="51"/>
-<wire x1="-0.8" y1="-1.45" x2="0.8" y2="-1.45" width="0.127" layer="51"/>
-<wire x1="0.8" y1="-1.45" x2="0.8" y2="1.45" width="0.127" layer="51"/>
-<circle x="-2.5" y="0.95" radius="0.1" width="0.2" layer="21"/>
-<circle x="-2.5" y="0.95" radius="0.1" width="0.2" layer="51"/>
-<wire x1="1.05" y1="1.7" x2="-1.05" y2="1.7" width="0.05" layer="39"/>
-<wire x1="2.11" y1="-1.49" x2="2.11" y2="1.49" width="0.05" layer="39"/>
-<text x="-2.8" y="2" size="1.27" layer="25">&gt;NAME</text>
-<text x="-2.9" y="-3" size="1.27" layer="27">&gt;VALUE</text>
-<wire x1="0.8" y1="1.56" x2="-0.8" y2="1.56" width="0.127" layer="21"/>
-<wire x1="-0.8" y1="-1.56" x2="0.8" y2="-1.56" width="0.127" layer="21"/>
-<wire x1="1.05" y1="1.49" x2="1.05" y2="1.7" width="0.05" layer="39"/>
-<wire x1="2.11" y1="1.49" x2="1.05" y2="1.49" width="0.05" layer="39"/>
-<wire x1="-1.05" y1="-1.7" x2="1.05" y2="-1.7" width="0.05" layer="39"/>
-<wire x1="-2.11" y1="1.49" x2="-2.11" y2="-1.49" width="0.05" layer="39"/>
-<wire x1="-1.05" y1="-1.49" x2="-1.05" y2="-1.7" width="0.05" layer="39"/>
-<wire x1="-2.11" y1="-1.49" x2="-1.05" y2="-1.49" width="0.05" layer="39"/>
-<wire x1="-1.05" y1="1.49" x2="-1.05" y2="1.7" width="0.05" layer="39"/>
-<wire x1="-2.11" y1="1.49" x2="-1.05" y2="1.49" width="0.05" layer="39"/>
-<wire x1="1.05" y1="-1.49" x2="1.05" y2="-1.7" width="0.05" layer="39"/>
-<wire x1="2.11" y1="-1.49" x2="1.05" y2="-1.49" width="0.05" layer="39"/>
-<smd name="1" x="-1.255" y="0.95" dx="1.21" dy="0.58" layer="1" roundness="25"/>
-<smd name="2" x="-1.255" y="0" dx="1.21" dy="0.58" layer="1" roundness="25"/>
-<smd name="3" x="-1.255" y="-0.95" dx="1.21" dy="0.58" layer="1" roundness="25"/>
-<smd name="6" x="1.255" y="0.95" dx="1.21" dy="0.58" layer="1" roundness="25"/>
-<smd name="5" x="1.255" y="0" dx="1.21" dy="0.58" layer="1" roundness="25"/>
-<smd name="4" x="1.255" y="-0.95" dx="1.21" dy="0.58" layer="1" roundness="25"/>
-</package>
-</packages>
-<symbols>
-<symbol name="TMP100NA/3K">
-<wire x1="-12.7" y1="12.7" x2="12.7" y2="12.7" width="0.41" layer="94"/>
-<wire x1="12.7" y1="12.7" x2="12.7" y2="-12.7" width="0.41" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="-12.7" y2="-12.7" width="0.41" layer="94"/>
-<wire x1="-12.7" y1="-12.7" x2="-12.7" y2="12.7" width="0.41" layer="94"/>
-<text x="-12.7" y="13.7" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
-<text x="-12.7" y="-16.7" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
-<pin name="ADD0" x="-17.78" y="5.08" length="middle" direction="in"/>
-<pin name="ADD1" x="-17.78" y="2.54" length="middle" direction="in"/>
-<pin name="SCL" x="-17.78" y="0" length="middle" direction="in"/>
-<pin name="SDA" x="-17.78" y="-5.08" length="middle"/>
-<pin name="V+" x="17.78" y="10.16" length="middle" direction="pwr" rot="R180"/>
-<pin name="GND" x="17.78" y="-10.16" length="middle" direction="pwr" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="TMP100NA/3K" prefix="U">
-<description> &lt;a href="https://pricing.snapeda.com/parts/TMP100NA/3K/Texas%20Instruments/view-part?ref=eda"&gt;Check prices&lt;/a&gt;</description>
-<gates>
-<gate name="A" symbol="TMP100NA/3K" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SOT95P280X145-6N">
-<connects>
-<connect gate="A" pin="ADD0" pad="5"/>
-<connect gate="A" pin="ADD1" pad="3"/>
-<connect gate="A" pin="GND" pad="2"/>
-<connect gate="A" pin="SCL" pad="1"/>
-<connect gate="A" pin="SDA" pad="6"/>
-<connect gate="A" pin="V+" pad="4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="AVAILABILITY" value="Good"/>
-<attribute name="DESCRIPTION" value=" Temperature Sensor with I2C/SMBus Interface in SOT-23 6-SOT-23 -55 to 125 "/>
-<attribute name="MF" value="Texas Instruments"/>
-<attribute name="MP" value="TMP100NA/3K"/>
-<attribute name="PACKAGE" value="SOT-23-6 Texas Instruments"/>
-<attribute name="PRICE" value="None"/>
-<attribute name="PURCHASE-URL" value="https://pricing.snapeda.com/search/part/TMP100NA/3K/?ref=eda"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -9507,11 +9548,12 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C16" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="100nF"/>
 <part name="SUPPLY5" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="supply2" library_urn="urn:adsk.eagle:library:372" deviceset="GND" device=""/>
-<part name="U1" library="TMP100NA_3K" deviceset="TMP100NA/3K" device=""/>
-<part name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="5k"/>
-<part name="R18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="5k"/>
-<part name="C17" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-US" device="C0805" package3d_urn="urn:adsk.eagle:package:23617/2" value="10nF"/>
 <part name="FRAME5" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
+<part name="J2" library="SamacSys_Parts" deviceset="43045-0412" device=""/>
+<part name="J3" library="SamacSys_Parts" deviceset="43045-0412" device=""/>
+<part name="J4" library="SamacSys_Parts" deviceset="43045-0412" device=""/>
+<part name="J5" library="SamacSys_Parts" deviceset="43045-0412" device=""/>
+<part name="IC8" library="SamacSys_Parts" deviceset="TMP235AEDCKRQ1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9975,21 +10017,9 @@ Filter</text>
 <attribute name="NAME" x="326.1614" y="166.37" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="330.962" y="166.37" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="U1" gate="A" x="332.74" y="119.38" smashed="yes">
-<attribute name="NAME" x="320.04" y="133.08" size="2.0828" layer="95" ratio="10" rot="SR0"/>
-<attribute name="VALUE" x="320.04" y="102.68" size="2.0828" layer="96" ratio="10" rot="SR0"/>
-</instance>
-<instance part="R17" gate="G$1" x="297.18" y="114.3" smashed="yes" rot="R90">
-<attribute name="NAME" x="295.6814" y="113.03" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="300.482" y="113.03" size="1.778" layer="96" rot="R90"/>
-</instance>
-<instance part="R18" gate="G$1" x="312.42" y="104.14" smashed="yes" rot="R270">
-<attribute name="NAME" x="313.9186" y="105.41" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="309.118" y="105.41" size="1.778" layer="96" rot="R270"/>
-</instance>
-<instance part="C17" gate="G$1" x="335.28" y="93.98" smashed="yes">
-<attribute name="NAME" x="336.296" y="94.615" size="1.778" layer="95"/>
-<attribute name="VALUE" x="336.296" y="89.789" size="1.778" layer="96"/>
+<instance part="IC8" gate="G$1" x="317.5" y="124.46" smashed="yes">
+<attribute name="NAME" x="321.31" y="132.08" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="321.31" y="129.54" size="1.778" layer="96" align="center-left"/>
 </instance>
 </instances>
 <busses>
@@ -10119,22 +10149,6 @@ Filter</text>
 <pinref part="C15" gate="G$1" pin="2"/>
 <wire x1="347.98" y1="160.02" x2="347.98" y2="162.56" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="U1" gate="A" pin="ADD0"/>
-<pinref part="U1" gate="A" pin="ADD1"/>
-<wire x1="314.96" y1="124.46" x2="314.96" y2="121.92" width="0.1524" layer="91"/>
-<label x="314.96" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U1" gate="A" pin="GND"/>
-<wire x1="350.52" y1="109.22" x2="353.06" y2="109.22" width="0.1524" layer="91"/>
-<label x="353.06" y="109.22" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="C17" gate="G$1" pin="2"/>
-<wire x1="335.28" y1="88.9" x2="335.28" y2="86.36" width="0.1524" layer="91"/>
-<label x="335.28" y="86.36" size="1.27" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="VCC_3V3" class="0">
 <segment>
@@ -10218,22 +10232,6 @@ Filter</text>
 <label x="322.58" y="157.48" size="1.016" layer="95" rot="R180" xref="yes"/>
 <wire x1="327.66" y1="157.48" x2="322.58" y2="157.48" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="R18" gate="G$1" pin="2"/>
-<pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="312.42" y1="99.06" x2="312.42" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="96.52" x2="335.28" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="R17" gate="G$1" pin="1"/>
-<wire x1="297.18" y1="109.22" x2="297.18" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="96.52" x2="312.42" y2="96.52" width="0.1524" layer="91"/>
-<junction x="312.42" y="96.52"/>
-<pinref part="U1" gate="A" pin="V+"/>
-<wire x1="350.52" y1="129.54" x2="365.76" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="129.54" x2="365.76" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="365.76" y1="96.52" x2="335.28" y2="96.52" width="0.1524" layer="91"/>
-<junction x="335.28" y="96.52"/>
-<label x="297.18" y="96.52" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
 </net>
 <net name="MSHUNT_AMP" class="0">
 <segment>
@@ -10262,13 +10260,6 @@ Filter</text>
 <wire x1="76.2" y1="193.04" x2="76.2" y2="200.66" width="0.1524" layer="91"/>
 <label x="76.2" y="200.66" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
-<segment>
-<pinref part="R18" gate="G$1" pin="1"/>
-<pinref part="U1" gate="A" pin="SDA"/>
-<wire x1="312.42" y1="109.22" x2="312.42" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="312.42" y1="114.3" x2="314.96" y2="114.3" width="0.1524" layer="91"/>
-<label x="312.42" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="I2C_SCL" class="0">
 <segment>
@@ -10284,12 +10275,6 @@ Filter</text>
 <wire x1="68.58" y1="195.58" x2="73.66" y2="195.58" width="0.1524" layer="91"/>
 <wire x1="73.66" y1="195.58" x2="73.66" y2="200.66" width="0.1524" layer="91"/>
 <label x="73.66" y="200.66" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R17" gate="G$1" pin="2"/>
-<pinref part="U1" gate="A" pin="SCL"/>
-<wire x1="297.18" y1="119.38" x2="314.96" y2="119.38" width="0.1524" layer="91"/>
-<label x="297.18" y="119.38" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="MSHUNT_ADC" class="0">
@@ -10910,6 +10895,22 @@ CONNECTOR</text>
 <attribute name="DRAWING_NAME" x="344.17" y="15.24" size="2.54" layer="94"/>
 <attribute name="LAST_DATE_TIME" x="344.17" y="10.16" size="2.286" layer="94"/>
 <attribute name="SHEET" x="357.505" y="5.08" size="2.54" layer="94"/>
+</instance>
+<instance part="J2" gate="G$1" x="15.24" y="246.38" smashed="yes">
+<attribute name="NAME" x="31.75" y="254" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="31.75" y="251.46" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="J3" gate="G$1" x="15.24" y="236.22" smashed="yes">
+<attribute name="NAME" x="31.75" y="243.84" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="31.75" y="241.3" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="J4" gate="G$1" x="15.24" y="226.06" smashed="yes">
+<attribute name="NAME" x="31.75" y="233.68" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="31.75" y="231.14" size="1.778" layer="96" align="center-left"/>
+</instance>
+<instance part="J5" gate="G$1" x="15.24" y="215.9" smashed="yes">
+<attribute name="NAME" x="31.75" y="223.52" size="1.778" layer="95" align="center-left"/>
+<attribute name="VALUE" x="31.75" y="220.98" size="1.778" layer="96" align="center-left"/>
 </instance>
 </instances>
 <busses>
