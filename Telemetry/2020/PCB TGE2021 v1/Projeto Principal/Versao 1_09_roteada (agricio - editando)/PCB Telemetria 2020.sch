@@ -9647,20 +9647,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="97.536" y="223.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="I2C_SDA" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="22"/>
-<wire x1="94.996" y1="187.96" x2="97.536" y2="187.96" width="0.1524" layer="91"/>
-<label x="97.536" y="187.96" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="I2C_SCL" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="21"/>
-<wire x1="94.996" y1="182.88" x2="97.536" y2="182.88" width="0.1524" layer="91"/>
-<label x="97.536" y="182.88" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="VCC_3V3" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="3.3V"/>
@@ -9727,6 +9713,20 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="94.996" y1="208.28" x2="97.536" y2="208.28" width="0.1524" layer="91"/>
 <label x="97.536" y="208.28" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$1" gate="G$1" pin="0"/>
+</segment>
+</net>
+<net name="I2C_SDA" class="0">
+<segment>
+<wire x1="94.996" y1="182.88" x2="97.536" y2="182.88" width="0.1524" layer="91"/>
+<label x="97.536" y="182.88" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="21"/>
+</segment>
+</net>
+<net name="I2C_SCL" class="0">
+<segment>
+<wire x1="94.996" y1="187.96" x2="97.536" y2="187.96" width="0.1524" layer="91"/>
+<label x="97.536" y="187.96" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="22"/>
 </segment>
 </net>
 </nets>
@@ -10405,22 +10405,6 @@ Filter</text>
 <wire x1="200.66" y1="223.52" x2="200.66" y2="226.06" width="0.1524" layer="91"/>
 <junction x="200.66" y="223.52"/>
 <label x="200.66" y="226.06" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
-<net name="AIN2" class="0">
-<segment>
-<pinref part="IC5" gate="G$1" pin="AIN2"/>
-<wire x1="68.58" y1="215.9" x2="71.12" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="215.9" x2="71.12" y2="208.28" width="0.1524" layer="91"/>
-<label x="71.12" y="208.28" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="AIN3" class="0">
-<segment>
-<pinref part="IC5" gate="G$1" pin="AIN3"/>
-<wire x1="68.58" y1="218.44" x2="76.2" y2="218.44" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="218.44" x2="76.2" y2="208.28" width="0.1524" layer="91"/>
-<label x="76.2" y="208.28" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="VCC_BBANK" class="0">
