@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2021-02-27T22:46:28Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.5.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.64,
+        "LayerNumber": 2,
+        "Name": {
+            "ProjectId": "TGE NEIL v1"
+        },
+        "Owner": "Joao Agricio <joaoagriciolopes@gmail.com>",
+        "Size": {
+            "X": 160,
+            "Y": 74
+        }
+    }
+}

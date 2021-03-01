@@ -11054,6 +11054,13 @@ CONNECTOR</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="113,1,193.571,130.071,FRAME1,,,,,"/>
+<approved hash="113,2,193.571,130.071,FRAME2,,,,,"/>
+<approved hash="113,4,193.571,130.071,FRAME3,,,,,"/>
+<approved hash="113,3,193.571,130.071,FRAME4,,,,,"/>
+<approved hash="113,5,193.571,130.071,FRAME5,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
