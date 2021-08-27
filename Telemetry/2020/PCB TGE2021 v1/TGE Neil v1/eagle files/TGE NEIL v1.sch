@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.5.2">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mil" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9602,13 +9602,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <label x="49.276" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="12V_CM" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="33"/>
-<wire x1="51.816" y1="198.12" x2="49.276" y2="198.12" width="0.1524" layer="91"/>
-<label x="49.276" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="GND" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
@@ -9673,13 +9666,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <pinref part="U$1" gate="G$1" pin="23"/>
 </segment>
 </net>
-<net name="12V_VM" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="32"/>
-<wire x1="51.816" y1="203.2" x2="49.276" y2="203.2" width="0.1524" layer="91"/>
-<label x="49.276" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="CONEX_12" class="0">
 <segment>
 <wire x1="51.816" y1="187.96" x2="49.276" y2="187.96" width="0.1524" layer="91"/>
@@ -9727,6 +9713,27 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="94.996" y1="187.96" x2="97.536" y2="187.96" width="0.1524" layer="91"/>
 <label x="97.536" y="187.96" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$1" gate="G$1" pin="22"/>
+</segment>
+</net>
+<net name="12V_VM" class="0">
+<segment>
+<wire x1="51.816" y1="198.12" x2="49.276" y2="198.12" width="0.1524" layer="91"/>
+<label x="49.276" y="198.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="33"/>
+</segment>
+</net>
+<net name="CMPPT_F" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="32"/>
+<wire x1="51.816" y1="203.2" x2="48.26" y2="203.2" width="0.1524" layer="91"/>
+<label x="48.26" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="12V_CM" class="0">
+<segment>
+<wire x1="51.816" y1="182.88" x2="49.276" y2="182.88" width="0.1524" layer="91"/>
+<label x="49.276" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$1" gate="G$1" pin="13"/>
 </segment>
 </net>
 </nets>
